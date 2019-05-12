@@ -1,0 +1,22 @@
+{
+  "name": "webappswg",
+  "version": "1.0.0",
+  "description": "WebApps WG homepage",
+  "main": "index.html",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/w3c/WebAppsWG.git"
+  },
+  "author": "",
+  "license": "W3C",
+  "bugs": {
+    "url": "https://github.com/w3c/WebAppsWG/issues"
+  },
+  "homepage": "https://github.com/w3c/WebAppsWG#readme",
+  "dependencies": {
+    "serve": "^11.0.0"
+  }
+}
