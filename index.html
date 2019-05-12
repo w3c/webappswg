@@ -10,6 +10,7 @@
     margin: 0 auto;
     font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS",
       sans-serif;
+    padding: 0 .25cm;
   }
   a:link,
   a:visited {
@@ -50,7 +51,7 @@
 
   header p {
     flex: 100%;
-    padding: 0 0.5em 0;
+    padding: 0 0.0em 0;
   }
 
   header nav a:hover {
@@ -73,7 +74,7 @@
   }
 
   header nav ul li:not(:first-child) {
-    margin-left: .5cm;
+    margin-left: .35cm;
   }
 
   header li {
@@ -157,6 +158,9 @@
     align-items: stretch;
   }
   @media (max-width: 700px) {
+    body {
+      padding: 0;
+    }
     header {
       color: white;
       display: flex;
