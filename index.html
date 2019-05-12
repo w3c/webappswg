@@ -45,6 +45,7 @@
   header h1 {
     font-weight: normal;
     color: #0d1321;
+    font-size: 1.7em;
   }
 
   header p {
@@ -72,7 +73,7 @@
   }
 
   header nav ul li:not(:first-child) {
-    margin-left: 2rem;
+    margin-left: .5cm;
   }
 
   header li {
@@ -99,9 +100,10 @@
     column-gap: 1cm;
   }
 
-  #specs abbr {
-    text-decoration: none;
+  #specs .status {
+    color: #333;
   }
+
   #specs div {
     break-inside: avoid;
     margin-bottom: 0.5cm;
@@ -110,7 +112,7 @@
   #specs dd {
     margin: 0;
     font-size: 0.8em;
-    color: #333333;
+    color: #555;
   }
 
   #about {
@@ -140,9 +142,10 @@
   }
 
   footer {
-    padding: 1cm 0 1cm 0;
+    padding: 1cm 1cm;
     border-bottom: thin solid silver;
     border-top: thin solid silver;
+    margin-bottom: 1cm;
   }
 
   footer ul {
@@ -153,7 +156,7 @@
     justify-content: space-between;
     align-items: stretch;
   }
-  @media (max-width: 500px) {
+  @media (max-width: 700px) {
     header {
       color: white;
       display: flex;
@@ -161,6 +164,7 @@
       background: black;
       padding: 0.2cm 0cm;
     }
+
     header h1 {
       flex: 1;
       order: 1;
@@ -169,20 +173,28 @@
       text-align: center;
       color: white;
     }
+
     header p {
       order: 2;
       font-size: 0.8em;
       text-align: center;
-      flex: auto;
+      flex: 100%;
     }
+
     header nav {
+      margin-top: 0.25cm;
       order: 3;
+      padding: 0 0.2cm;
     }
 
     header nav ul {
       padding: 0.2cm 0.2cm;
       display: flex;
       justify-content: space-between;
+    }
+
+    header nav ul li:not(:first-child) {
+      margin-left: .3cm;
     }
 
     header nav a:link,
@@ -202,9 +214,11 @@
     #specs dl {
       columns: 1;
     }
+
     main {
       margin-bottom: 0;
     }
+
     footer {
       padding: 0.2cm 0 0.2cm 0;
       border-bottom: thin solid silver;
@@ -214,7 +228,7 @@
     }
 
     footer nav {
-      padding: 0 0.1cm;
+      padding: 0 0.2cm;
     }
   }
 </style>
@@ -239,7 +253,7 @@
   const specs = [
     "FileAPI",
     "gamepad",
-    "IndexedDB",
+    "IndexedDB-2",
     "intersection-observer",
     "pointerlock-2",
     "push-api",
@@ -282,7 +296,7 @@
         div.innerHTML = `
           <dt>
             <a href="${entry.href}">${title}</a>
-            (<abbr title="${statusText}">${status}</abbr>)
+            - <span class="status">${statusText}</span>
           </dt>
           <dd>
             ${authors.join(", ")}. ${date}.
@@ -303,18 +317,16 @@
     <nav>
       <ul>
         <li><a href="">Charter</a></li>
+        <li><a href="https://github.com/w3c/webappswg">GitHub</a>
         <li><a href="">Participants</a></li>
         <li>
           <a href="https://lists.w3.org/Archives/Public/public-webapps/"
             >Mailing list</a
           >
         </li>
-        <li>
-          <a href="https://www.w3.org/2004/01/pp-impl/83482/join">Join</a>
-        </li>
       </ul>
     </nav>
-    <p><q>Facilitating the development of client-side web applications.</q></p>
+    <p>Facilitating the development of client-side web applications.</p>
   </header>
   <main>
     <section id="specs">
@@ -331,12 +343,13 @@
         <li>
           <a href="https://www.w3.org/Consortium/cepc/">Code of conduct</a>
         </li>
-        <li><a href="https://www.w3.org/standards/">Standards</a></li>
-        <li><a href="https://www.w3.org/participate/">Participate</a></li>
         <li>
           <a href="https://www.w3.org/Consortium/membership">Membership</a>
         </li>
         <li><a href="https://www.w3.org/Consortium/">About W3C</a></li>
+        <li>
+          <a href="">Join (Member only)</a>
+        </li>
       </ul>
     </nav>
   </footer>
