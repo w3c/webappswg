@@ -273,6 +273,7 @@
     "uievents-code",
     "uievents-key",
   ];
+  const w3cKey = "97i7kddpljc4404so8co8oows0c8soo";
   const specRefURL = new URL("https://api.specref.org/bibrefs");
   specRefURL.searchParams.set("refs", specs.join(","));
   const specsPromise = fetch(specRefURL).then(r => r.json());
@@ -321,7 +322,7 @@
       <ul>
         <li><a href="">Charter</a></li>
         <li><a href="https://github.com/w3c/webappswg">GitHub</a></li>
-        <li><a href="">Participants</a></li>
+        <li><a href="https://www.w3.org/2000/09/dbwg/details?group=114929&public=1&gs=1&">Participants</a></li>
         <li>
           <a href="https://lists.w3.org/Archives/Public/public-webapps/"
             >Mailing list</a
