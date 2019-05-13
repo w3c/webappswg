@@ -1,2 +1,1 @@
-# WebAppsWG
-Web Applications Working Group
+# Web Applications Working Group
