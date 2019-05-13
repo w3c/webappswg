@@ -299,8 +299,7 @@
         const statusText = `${status2text.get(status) || ""}`;
         div.innerHTML = `
           <dt>
-            <a href="${entry.href}">${title}</a>
-            - <span class="status">${statusText}</span>
+            <a href="${entry.href}">${title} - <span class="status">${statusText}</span></a>
           </dt>
           <dd>
             ${authors.join(", ")}. ${date}.
