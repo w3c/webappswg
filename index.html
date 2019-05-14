@@ -2,14 +2,24 @@
 <meta charset="utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 <title>WebApps WG</title>
+<link rel="preconnect" href="https://api.specref.org" />
+<link rel="preconnect" href="https://api.w3.org" />
+<script src="https://unpkg.com/lighterhtml"></script>
 <style>
+  @keyframes fadeInOpacity {
+    0% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
   body {
     display: flex;
     flex-direction: column;
     max-width: 1240px;
     margin: 0 auto;
-    font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS",
-      sans-serif;
+    font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
     padding: 0 0.25cm;
   }
   a:link,
@@ -22,6 +32,7 @@
     color: #1955a5;
   }
 
+  dl,
   h1,
   h2,
   ul,
@@ -82,23 +93,32 @@
     padding: 0;
   }
 
-  #specs {
+  main section {
     display: flex;
     align-items: center;
     align-items: stretch;
+    margin-bottom: 1cm;
   }
 
-  #specs h2 {
+  main section > h2 {
     font-size: 1.3em;
-    width: 4cm;
+    min-width: 4cm;
     font-weight: bold;
   }
 
+  #specs dl.loading {
+    max-height: 1cm;
+    overflow: hidden;
+  }
+
   #specs dl {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
     margin: 0;
-    columns: 2;
-    column-fill: balance;
-    column-gap: 1cm;
+    max-height: 2000vh;
+    transition: max-height 5s ease-in-out 0s;
+    overflow: hidden;
   }
 
   #specs .status {
@@ -106,12 +126,18 @@
   }
 
   #specs div {
-    break-inside: avoid;
+    flex: 1 0 35%;
     margin-bottom: 0.5cm;
+    opacity: 1;
+    max-width: calc(50% - 0.4cm);
+    animation-name: fadeInOpacity;
+    animation-iteration-count: 1;
+    animation-timing-function: ease-in;
+    animation-duration: 1s;
   }
 
   #specs dd {
-    margin: 0;
+    margin: 0.1cm 0 0 0;
     font-size: 0.8em;
     color: #555;
   }
@@ -157,6 +183,18 @@
     justify-content: space-between;
     align-items: stretch;
   }
+
+  .loading {
+    height: 1.5cm;
+  }
+
+  #participations {
+    columns: 4;
+  }
+  #participations li {
+    margin-bottom: 0.2cm;
+  }
+
   @media (max-width: 700px) {
     body {
       padding: 0;
@@ -206,21 +244,30 @@
       color: white;
     }
 
-    #specs h2 {
-      margin-bottom: 1cm;
+    main section:first-child {
+      margin-top: 1cm;
     }
 
-    #specs {
+    main section {
       display: block;
-      padding: 1cm;
+      padding: 0 1cm;
     }
 
-    #specs dl {
-      columns: 1;
+    main section h2 {
+      margin-bottom: 0.5cm;
+    }
+
+    #specs div {
+      flex: 1 0 100%;
+      max-width: unset;
     }
 
     main {
       margin-bottom: 0;
+    }
+
+    #participations {
+      columns: 2;
     }
 
     footer {
@@ -236,93 +283,180 @@
     }
   }
 </style>
-<link rel="preconnect" href="https://api.specref.org" />
 <script>
-  const status2text = new Map([
-    ["NOTE", "Working Group Note"],
-    ["WG-NOTE", "Working Group Note"],
-    ["ED", "Editor's Draft"],
-    ["FPWD", "First Public Working Draft"],
-    ["WD", "Working Draft"],
-    ["FPWD-NOTE", "Working Group Note"],
-    ["WD-NOTE", "Working Draft"],
-    ["LC-NOTE", "Working Draft"],
-    ["FPLC", "First Public and Last Call Working Draft"],
-    ["LC", "Last Call Working Draft"],
-    ["CR", "Candidate Recommendation"],
-    ["PR", "Proposed Recommendation"],
-    ["PER", "Proposed Edited Recommendation"],
-    ["REC", "Recommendation"],
-  ]);
-  const specs = [
-    "FileAPI",
-    "gamepad",
-    "IndexedDB-2",
-    "intersection-observer",
-    "pointerlock-2",
-    "push-api",
-    "screen-orientation",
-    "appmanifest",
-    "clipboard-apis",
-    "input-events-1",
-    "input-events-2",
-    "selection-api",
-    "html-aam-1.0",
-    "html-aria",
-    "uievents",
-    "uievents-code",
-    "uievents-key",
-  ];
-  const w3cKey = "97i7kddpljc4404so8co8oows0c8soo";
-  const specRefURL = new URL("https://api.specref.org/bibrefs");
-  specRefURL.searchParams.set("refs", specs.join(","));
-  const specsPromise = fetch(specRefURL).then(r => r.json());
+  const { render, html } = lighterhtml;
+  const groupId = "114929"; // -114929 //83482
+  const groupInfoPromise = getW3CData(`/groups/${groupId}`);
+  function getW3CData(queryPath) {
+    const apiURL = new URL(queryPath, "https://api.w3.org/");
+    apiURL.searchParams.set("apikey", "97i7kddpljc4404so8co8oows0c8soo");
+    return fetch(apiURL).then(r => r.json());
+  }
 
   document.addEventListener("DOMContentLoaded", async () => {
+    await Promise.all([
+      renderSpecs(groupInfoPromise),
+      renderMission(groupInfoPromise),
+      renderInlinePeople(groupInfoPromise, "chairs", "chairs"),
+      renderInlinePeople(groupInfoPromise, "team-contacts", "team-contacts"),
+      renderParticipations(groupInfoPromise),
+    ]);
+  });
+
+  async function renderParticipations(groupInfoPromise) {
+    const groupInfo = await groupInfoPromise;
+    const { href } = groupInfo._links.participations;
+    const participants = await getW3CData(href);
+    const elem = document.getElementById("participations");
+    if (!participants._links.participations) {
+      render(
+        elem,
+        () =>
+          html`
+            <li>No members yet.</li>
+          `
+      );
+      return;
+    }
+    render(
+      elem,
+      () =>
+        html`
+          ${participants._links.participations
+            .sort(({ title: a }, { title: b }) => a < b)
+            .map(
+              ({ title }) =>
+                html`
+                  <li>${title}</li>
+                `
+            )}
+        `
+    );
+  }
+
+  async function renderMission(groupInfoPromise) {
+    const missionPara = document.querySelector("#mission p");
+    missionPara.classList.add("loading");
+    let mission;
+    try {
+      const groupInfo = await groupInfoPromise;
+      mission = groupInfo.description;
+    } catch (err) {
+      console.error(err);
+      mission = "Oops. Something went wrong fetching the mission.";
+    } finally {
+      render(
+        missionPara,
+        () =>
+          html`
+            ${mission}
+          `
+      );
+      missionPara.classList.remove("loading");
+    }
+  }
+
+  async function renderInlinePeople(groupInfoPromise, prop, query) {
+    const elem = document.getElementById(query);
+    const groupInfo = await groupInfoPromise;
+    const { href } = groupInfo._links[prop];
+    const data = await getW3CData(href);
+    const people = data._links[prop];
+    if (!people) {
+      render(
+        elem,
+        () =>
+          html`
+            No one assigned yet.
+          `
+      );
+      return;
+    }
+    const names = people.map(({ title }) => title).join(", ");
+    render(
+      elem,
+      () => html`
+        ${names}.
+      `
+    );
+  }
+  async function renderSpecs() {
     const specList = document.getElementById("specList");
     let specs;
     try {
-      specs = await specsPromise;
+      const groupInfo = await groupInfoPromise;
+
+      const {
+        _links: {
+          specifications: { href: specsHref },
+        },
+      } = groupInfo;
+      const {
+        _links: { specifications },
+      } = await getW3CData(specsHref);
+      specs = specifications;
     } catch (err) {
       specList.innerHTML = `
-        <p>
-          Oops! something went wrong.
-          See our <a href="https://www.w3.org/2019/05/webapps-charter.html">charter</a> for the list of specs.
-        </p>
-      `;
+            <p>
+              Oops! something went wrong.
+              See our <a href="https://www.w3.org/2019/05/webapps-charter.html">charter</a> for the list of specs.
+            </p>
+          `;
+      return;
     }
-    const docFrag = Array.from(Object.entries(specs))
-      .sort(([, { title: titleA }], [, { title: titleB }]) => titleA > titleB)
-      .map(([id, entry]) => {
-        const { href, title, status, authors, date } = entry;
+    if (!specs) {
+      render(
+        specList,
+        () =>
+          html`
+            Working group hasn't published any specs.
+          `
+      );
+      return;
+    }
+    // process the specifications
+    const divPromises = specs
+      .sort(({ title: titleA }, { title: titleB }) => titleA > titleB)
+      .map(async ({ href: specHref, title }) => {
         const div = document.createElement("div");
-        div.id = id;
-        const statusText = `${status2text.get(status) || ""}`;
-        div.innerHTML = `
-          <dt>
-            <a href="${entry.href}">${title} - <span class="status">${statusText}</span></a>
-          </dt>
-          <dd>
-            ${authors.join(", ")}. ${date}.
-          </dd>
-        `;
+        const specData = await getW3CData(specHref);
+        const { title: specTitle, shortname, description, shortlink } = specData;
+        const editorsDraft = specData["editor-draft"];
+        const { title: statusText } = specData._links["latest-version"];
+        div.id = shortname;
+        const tempDesc = document.createElement("div");
+        tempDesc.innerHTML = description;
+        render(
+          div,
+          () => html`
+            <dt>
+              <a href="${shortlink}"
+                >${specTitle} - <span class="status">${statusText}</span></a
+              >
+            </dt>
+            <dd>
+              ${tempDesc.firstElementChild.childNodes}
+            </dd>
+          `
+        );
         return div;
-      })
-      .reduce((docFrag, div) => {
-        docFrag.append(div);
-        return docFrag;
-      }, document.createDocumentFragment());
-    specList.replaceChild(docFrag, specList.firstElementChild);
-  });
+      });
+    const divs = await Promise.all(divPromises);
+    specList.firstElementChild.remove();
+    specList.classList.remove("loading");
+    specList.append(...divs);
+  }
+
 </script>
 <body>
   <header>
     <h1>Web Applications Working Group</h1>
     <nav>
       <ul>
-        <li><a href="https://www.w3.org/2019/05/webapps-charter.html">Charter</a></li>
+        <li>
+          <a href="https://www.w3.org/2019/05/webapps-charter.html">Charter</a>
+        </li>
         <li><a href="https://github.com/w3c/webappswg">GitHub</a></li>
-        <li><a href="https://www.w3.org/2000/09/dbwg/details?group=114929&public=1&gs=1&">Participants</a></li>
         <li>
           <a href="https://lists.w3.org/Archives/Public/public-webapps/"
             >Mailing list</a
@@ -330,16 +464,30 @@
         </li>
       </ul>
     </nav>
-    <p>Facilitating the development of client-side web applications.</p>
   </header>
   <main>
+    <section id="mission">
+      <h2>Mission</h2>
+      <p>...Loading group mission...</p>
+    </section>
     <section id="specs">
       <h2>Specs</h2>
-      <dl id="specList">
+      <dl id="specList" class="loading">
         <p>... Fetching our working group's specs...</p>
       </dl>
     </section>
-    <section id="participants"></section>
+    <section id="Contacts">
+      <h2>Contacts</h2>
+      <dl>
+        <dt>Chairs:</dt>
+        <dd id="chairs"></dd>
+        <dt>Team contacts:</dt>
+        <dd id="team-contacts"></dd>
+      </dl>
+    </section>
+    <section>
+      <h2>Members</h2>
+      <ul id="participations"></ul>
   </main>
   <footer>
     <nav>
