@@ -323,7 +323,7 @@
       () =>
         html`
           ${participants._links.participations
-            .sort(({ title: a }, { title: b }) => a < b)
+            .sort(({ title: a }, { title: b }) => a > b)
             .map(
               ({ title }) =>
                 html`
