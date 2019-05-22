@@ -1,6 +1,8 @@
 # Web Applications Working Group
 
-This is our group's administration page. If you have any admin related issues, please [file them](https://github.com/w3c/webappswg/issues).
+This is our group's administration page - please see our [Charter](https://www.w3.org/2019/05/webapps-charter.html) for more info.
+
+If you have any admin related issues, please [file them](https://github.com/w3c/webappswg/issues).
 
 ## Specifications
 
