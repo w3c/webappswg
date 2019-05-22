@@ -9,6 +9,7 @@ If you have any admin related issues, please [file them](https://github.com/w3c/
  * ♿️ [ARIA in HTML](https://github.com/w3c/html-aria/) - [Eds Draft](http://w3c.github.io/html-aria/).
  * 📄 [File API](https://github.com/w3c/fileAPI) - [Eds Draft](https://w3c.github.io/FileAPI/)
  * 🎮 [GamePad API](https://github.com/w3c/gamepad) - [Eds Draft](https://w3c.github.io/gamepad/)
+ * ⚭ [Intersection Observer](https://github.com/w3c/IntersectionObserver) - [Eds Draft](https://w3c.github.io/IntersectionObserver/)
 
 ## Chairs 🛋
 
