@@ -4,19 +4,19 @@ This is our group's administration page. If you have any admin related issues, p
 
 ## Specifications
 
- * [ARIA in HTML](https://github.com/w3c/html-aria/) - [Eds Draft](http://w3c.github.io/html-aria/).
- * [File API](https://github.com/w3c/fileAPI) - [Eds Draft](https://w3c.github.io/FileAPI/)
+ * ♿️ [ARIA in HTML](https://github.com/w3c/html-aria/) - [Eds Draft](http://w3c.github.io/html-aria/).
+ * 📄 [File API](https://github.com/w3c/fileAPI) - [Eds Draft](https://w3c.github.io/FileAPI/)
+ * 🎮 [GamePad API](https://github.com/w3c/gamepad) - [Eds Draft](https://w3c.github.io/gamepad/)
 
+## Chairs 🛋
 
-## Chairs
-
- * ✉️ [Léonie Watson](mailto:lw@tetralogical.com)
- * ✉️ [Marcos Caceres](mailto:marcos@marcosc.com)
+ * Léonie Watson [✉️](mailto:lw@tetralogical.com)
+ * Marcos Cáceres [✉️](mailto:marcos@marcosc.com)
  
 ## W3C Team 
 
- * [Yves Lafon](mailto:ylafon@w3.org)
- * [Xiaoqian Wu](mailto:xiaoqian@w3.org)
+ * Yves Lafon [✉️](mailto:ylafon@w3.org)
+ * Xiaoqian Wu [✉️](mailto:xiaoqian@w3.org)
 
 ## Code of conduct violations
 
