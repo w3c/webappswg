@@ -116,7 +116,7 @@
     justify-content: space-between;
     flex-wrap: wrap;
     margin: 0;
-    max-height: 2000vh;
+    max-height: 1000vh;
     transition: max-height 5s ease-in-out 0s;
     overflow: hidden;
   }
@@ -190,9 +190,11 @@
 
   #participations {
     columns: 4;
+    column-gap: 2cm;
   }
   #participations li {
     margin-bottom: 0.2cm;
+    break-inside: avoid;
   }
 
   @media (max-width: 700px) {
@@ -323,7 +325,7 @@
       () =>
         html`
           ${participants._links.participations
-            .sort(({ title: a }, { title: b }) => a > b)
+            .sort(({ title: a }, { title: b }) => a.localeCompare(b))
             .map(
               ({ title }) =>
                 html`
@@ -416,7 +418,7 @@
     }
     // process the specifications
     const divPromises = specs
-      .sort(({ title: titleA }, { title: titleB }) => titleA > titleB)
+      .sort(({ title: titleA }, { title: titleB }) => titleA.localeCompare(titleB))
       .map(async ({ href: specHref, title }) => {
         const div = document.createElement("div");
         const specData = await getW3CData(specHref);
