@@ -442,7 +442,7 @@
         return div;
       });
     const divs = await Promise.all(divPromises);
-    specList.firstEoinlementChild.remove();
+    specList.firstElementChild.remove();
     specList.classList.remove("loading");
     specList.append(...divs);
   }
