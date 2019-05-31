@@ -10,7 +10,8 @@ If you have any admin related issues, please [file them](https://github.com/w3c/
  * 📄 [File API](https://github.com/w3c/fileAPI) - [Eds Draft](https://w3c.github.io/FileAPI/)
  * 🎮 [GamePad API](https://github.com/w3c/gamepad) - [Eds Draft](https://w3c.github.io/gamepad/)
  * 👀 [Intersection Observer](https://github.com/w3c/IntersectionObserver) - [Eds Draft](https://w3c.github.io/IntersectionObserver/)
-
+ * 📲 [Screen Orientation API](http://github.com/w3c/screen-orientation) - [Eds Draft](https://w3c.github.io/screen-orientation/)
+ 
 ## Chairs 🛋
 
  * Léonie Watson [✉️](mailto:lw@tetralogical.com)
