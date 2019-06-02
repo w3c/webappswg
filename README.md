@@ -12,8 +12,7 @@ If you have any admin related issues, please [file them](https://github.com/w3c/
  * 👀 [Intersection Observer](https://github.com/w3c/IntersectionObserver) - [Eds Draft](https://w3c.github.io/IntersectionObserver/)
  * 📲 [Screen Orientation API](http://github.com/w3c/screen-orientation) - [Eds Draft](https://w3c.github.io/screen-orientation/)
  * 🖱[Pointer Lock 2.0](https://github.com/w3c/pointerlock) - [Eds Draft](https://w3c.github.io/pointerlock/)
- * ♿️ [W3C
-HTML Accessibility API Mappings 1.0](https://github.com/w3c/html-aam) - [Eds Draft](https://w3c.github.io/html-aam/)
+ * ♿️ [HTML Accessibility API Mappings 1.0](https://github.com/w3c/html-aam) - [Eds Draft](https://w3c.github.io/html-aam/)
  
 ## Chairs 🛋
 
