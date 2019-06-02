@@ -11,7 +11,7 @@ If you have any admin related issues, please [file them](https://github.com/w3c/
  * 🎮 [GamePad API](https://github.com/w3c/gamepad) - [Eds Draft](https://w3c.github.io/gamepad/)
  * 👀 [Intersection Observer](https://github.com/w3c/IntersectionObserver) - [Eds Draft](https://w3c.github.io/IntersectionObserver/)
  * 📲 [Screen Orientation API](http://github.com/w3c/screen-orientation) - [Eds Draft](https://w3c.github.io/screen-orientation/)
- * 🖱[Pointer Lock 2.0](https://github.com/w3c/pointerlock) - [Eds Draft]((https://w3c.github.io/pointerlock/)
+ * 🖱[Pointer Lock 2.0](https://github.com/w3c/pointerlock) - [Eds Draft](https://w3c.github.io/pointerlock/)
  
 ## Chairs 🛋
 
