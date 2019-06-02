@@ -16,13 +16,13 @@ If you have any admin related issues, please [file them](https://github.com/w3c/
  
 ## Chairs 🛋
 
- * Léonie Watson [✉️](mailto:lw@tetralogical.com)
- * Marcos Cáceres [✉️](mailto:marcos@marcosc.com)
+ * 🦹‍♀️ Léonie Watson [✉️](mailto:lw@tetralogical.com)
+ * 🦹‍♂️ Marcos Cáceres [✉️](mailto:marcos@marcosc.com)
  
 ## W3C Team  
 
- * Yves Lafon [✉️](mailto:ylafon@w3.org)
- * Xiaoqian Wu [✉️](mailto:xiaoqian@w3.org)
+ * 🦹‍♂️ Yves Lafon [✉️](mailto:ylafon@w3.org)
+ * 🦹‍♀️ Xiaoqian Wu [✉️](mailto:xiaoqian@w3.org)
 
 ## Code of conduct violations
 
