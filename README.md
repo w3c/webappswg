@@ -14,6 +14,7 @@ If you have any admin related issues, please [file them](https://github.com/w3c/
  * 🖱[Pointer Lock 2.0](https://github.com/w3c/pointerlock) - [Eds Draft](https://w3c.github.io/pointerlock/)
  * ♿️ [HTML Accessibility API Mappings 1.0](https://github.com/w3c/html-aam) - [Eds Draft](https://w3c.github.io/html-aam/)
  * ✂️ [Selection API](https://github.com/w3c/selection-api) - [Eds Draft](https://w3c.github.io/selection-api/)
+ * 📋 [clipboard APIs](https://github.com/w3c/clipboard-apis)- [Eds Draft](https://w3c.github.io/clipboard-apis/)
  
 ## Chairs 🛋
 
