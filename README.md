@@ -19,7 +19,7 @@ If you have any admin related issues, please [file them](https://github.com/w3c/
  * 🖱 [Pointer Lock 2.0](https://w3c.github.io/pointerlock/) - [Eds Draft](https://w3c.github.io/pointerlock/)
  * 📲 [Push API](https://www.w3.org/TR/push-api/) - [Eds Draft](https://w3c.github.io/push-api/)
  * ✂️ [Selection API](https://github.com/w3c/selection-api) - [Eds Draft](https://w3c.github.io/selection-api/)
- * 📲 [Screen Orientation API](http://github.com/w3c/screen-orientation) - [Eds Draft](https://w3c.github.io/screen-orientation/)
+ * 📱 [Screen Orientation API](http://github.com/w3c/screen-orientation) - [Eds Draft](https://w3c.github.io/screen-orientation/)
  * ⌨️ [UI Events](https://www.w3.org/TR/uievents/) - [Eds Draft](https://w3c.github.io/uievents/)
  * 👾 [Web App Manifest](https://www.w3.org/TR/appmanifest/) - [Eds Draft](https://www.w3.org/TR/appmanifest/)
  
