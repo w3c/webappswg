@@ -6,15 +6,22 @@ If you have any admin related issues, please [file them](https://github.com/w3c/
 
 ## Specifications
 
+
  * ♿️ [ARIA in HTML](https://github.com/w3c/html-aria/) - [Eds Draft](http://w3c.github.io/html-aria/).
+ * 📋 [Clipboard APIs](https://github.com/w3c/clipboard-apis)- [Eds Draft](https://w3c.github.io/clipboard-apis/)
+ * ✒️ [ExecCommand](https://w3c.github.io/editing/execCommand.html) - Unofficial Draft.
  * 📄 [File API](https://github.com/w3c/fileAPI) - [Eds Draft](https://w3c.github.io/FileAPI/)
  * 🎮 [GamePad API](https://github.com/w3c/gamepad) - [Eds Draft](https://w3c.github.io/gamepad/)
- * 👀 [Intersection Observer](https://github.com/w3c/IntersectionObserver) - [Eds Draft](https://w3c.github.io/IntersectionObserver/)
- * 📲 [Screen Orientation API](http://github.com/w3c/screen-orientation) - [Eds Draft](https://w3c.github.io/screen-orientation/)
- * 🖱[Pointer Lock 2.0](https://github.com/w3c/pointerlock) - [Eds Draft](https://w3c.github.io/pointerlock/)
  * ♿️ [HTML Accessibility API Mappings 1.0](https://github.com/w3c/html-aam) - [Eds Draft](https://w3c.github.io/html-aam/)
+ * ✍ [Input Events Level 1](https://rawgit.com/w3c/input-events/v1/index.html)
+ * ✍️️️️ [Input Events Level 2](https://w3c.github.io/input-events/)
+ * 👀 [Intersection Observer](https://github.com/w3c/IntersectionObserver) - [Eds Draft](https://w3c.github.io/IntersectionObserver/)
+ * 🖱 [Pointer Lock 2.0](https://w3c.github.io/pointerlock/) - [Eds Draft](https://w3c.github.io/pointerlock/)
+ * 📲 [Push API](https://www.w3.org/TR/push-api/) - [Eds Draft](https://w3c.github.io/push-api/)
  * ✂️ [Selection API](https://github.com/w3c/selection-api) - [Eds Draft](https://w3c.github.io/selection-api/)
- * 📋 [clipboard APIs](https://github.com/w3c/clipboard-apis)- [Eds Draft](https://w3c.github.io/clipboard-apis/)
+ * 📲 [Screen Orientation API](http://github.com/w3c/screen-orientation) - [Eds Draft](https://w3c.github.io/screen-orientation/)
+ * ⌨️ [UI Events](https://www.w3.org/TR/uievents/) - [Eds Draft](https://w3c.github.io/uievents/)
+ * 👾 [Web App Manifest](https://www.w3.org/TR/appmanifest/) - [Eds Draft](https://www.w3.org/TR/appmanifest/)
  
 ## Chairs 🛋
 
