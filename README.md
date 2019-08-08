@@ -22,6 +22,7 @@ If you have any admin related issues, please [file them](https://github.com/w3c/
  * 📱 [Screen Orientation API](http://github.com/w3c/screen-orientation) - [Eds Draft](https://w3c.github.io/screen-orientation/).
  * ⌨️ [UI Events](https://www.w3.org/TR/uievents/) - [Eds Draft](https://w3c.github.io/uievents/).
  * 👾 [Web App Manifest](https://www.w3.org/TR/appmanifest/) - [Eds Draft](https://www.w3.org/TR/appmanifest/).
+ * 🎁 [Web Share](https://w3c.github.io/web-share/) - [Eds Draft](https://w3c.github.io/web-share/).
  
 ## Chairs 🛋
 
