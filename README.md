@@ -16,13 +16,13 @@ If you have any admin related issues, please [file them](https://github.com/w3c/
  * ✍ [Input Events Level 1](https://rawgit.com/w3c/input-events/v1/index.html).
  * ✍️️️️ [Input Events Level 2](https://w3c.github.io/input-events/).
  * 👀 [Intersection Observer](https://github.com/w3c/IntersectionObserver) - [Eds Draft](https://w3c.github.io/IntersectionObserver/).
- * 🖱 [Pointer Lock 2.0](https://w3c.github.io/pointerlock/) - [Eds Draft](https://w3c.github.io/pointerlock/).
- * 📲 [Push API](https://www.w3.org/TR/push-api/) - [Eds Draft](https://w3c.github.io/push-api/).
+ * 🖱 [Pointer Lock 2.0](https://github.com/w3c/pointerlock/) - [Eds Draft](https://w3c.github.io/pointerlock/).
+ * 📲 [Push API](https://github.com/w3c//push-api/) - [Eds Draft](https://w3c.github.io/push-api/).
  * ✂️ [Selection API](https://github.com/w3c/selection-api) - [Eds Draft](https://w3c.github.io/selection-api/).
  * 📱 [Screen Orientation API](http://github.com/w3c/screen-orientation) - [Eds Draft](https://w3c.github.io/screen-orientation/).
- * ⌨️ [UI Events](https://www.w3.org/TR/uievents/) - [Eds Draft](https://w3c.github.io/uievents/).
- * 👾 [Web App Manifest](https://www.w3.org/TR/appmanifest/) - [Eds Draft](https://www.w3.org/TR/appmanifest/).
- * 🎁 [Web Share](https://w3c.github.io/web-share/) - [Eds Draft](https://w3c.github.io/web-share/).
+ * ⌨️ [UI Events](https://github.com/w3c/uievents/) - [Eds Draft](https://w3c.github.io/uievents/).
+ * 👾 [Web App Manifest](https://github.com/w3c/appmanifest/) - [Eds Draft](https://www.w3.org/TR/appmanifest/).
+ * 🎁 [Web Share](https://github.com/w3c/web-share/) - [Eds Draft](https://w3c.github.io/web-share/).
  
 ## Chairs 🛋
 
