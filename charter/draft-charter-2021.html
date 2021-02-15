@@ -173,8 +173,6 @@
         <ul>
           <li>Haptic input devices and their emitted events and/or data.
           </li>
-          <li>Textual input and text manipulation.
-          </li>
           <li>Data sharing across remote and local web applications.
           </li>
           <li>Receiving and acting upon data from remote sources.
@@ -342,52 +340,11 @@
             </tr>
             <tr>
               <td>
-                <a href="#551">Clipboard API and Events</a>
+                <a href="#webshare">Web Share API</a>
               </td>
               <td>
-                An API for accessing data on the system clipboard.
-              </td>
-            </tr>
-            <tr>
-              <td>
-                <a href="#1323">Input Events</a>
-              </td>
-              <td>
-                <p>
-                  Additions to events for text and related input to allow for
-                  the monitoring and manipulation of default browser behavior
-                  in the context of text editor applications and other
-                  applications that deal with text input and text formatting.
-                  <a href="#1323">Level 1</a> gives the JS editor information
-                  about proposed changes from the user, but it makes the
-                  related DOM change be non-cancelable in many cases.
-                </p>
-                <p>
-                  <a href="#1421">Level 2</a> gives the JS editor information
-                  information about the proposed changes from the user and lets
-                  the JS author cancel the changes the browser otherwise would
-                  have done.
-                </p>
-              </td>
-            </tr>
-            <tr>
-              <td>
-                <a href="#1195">Selection API</a>
-              </td>
-              <td>
-                APIs for selection, which allow users and authors to select a
-                portion of a document or specify a point of interest for copy,
-                paste, and other editing operations.
-              </td>
-            </tr>
-            <tr>
-              <td>
-                <a href=
-                "https://w3c.github.io/editing/contentEditable">ContentEditable</a>
-              </td>
-              <td>
-                Allowed values and expected behaviors for the
-                <code>contenteditable</code> attribute.
+                An API for sharing text, links and other content to an
+                arbitrary destination of the user's choice.
               </td>
             </tr>
             <tr>
@@ -453,15 +410,6 @@
               <td>
                 An asynchronous Javascript cookies API for documents and
                 workers.
-              </td>
-            </tr>
-            <tr>
-              <td>
-                <a href="https://wicg.github.io/web-share/">Web Share API</a>
-              </td>
-              <td>
-                An API for sharing text, links and other content to an
-                arbitrary destination of the user's choice.
               </td>
             </tr>
             <tr>
@@ -912,7 +860,6 @@
               -->
             </tbody>
           </table>
-
           <p class="note">
             Note: Starting from 16 July 2020, the team contacts of the WebApps Working Group reduced from Yves Lafon (0.3 FTE), Xiaoqian Wu (0.2 FTE) to Xiaoqian Wu (0.1 FTE). Starting from 5 November 2020, Marcos Cáceres re-appointed as co-chair after affiliation change. We made non-substantive modifications to this charter to reflect these changes.
           </p>
@@ -1092,73 +1039,6 @@
           <dd>
             Estimated Completion: 2 years
           </dd>
-          <dt id="551" class='spec'>
-            <a href='https://www.w3.org/TR/clipboard-apis/' rel=
-            'versionof'>Clipboard API and events</a><br>
-            Latest publication: <a href=
-            'https://www.w3.org/TR/2018/WD-clipboard-apis-20181108/'>08
-            November 2018</a>
-          </dt>
-          <dd>
-            Reference Draft: <a href=
-            'https://www.w3.org/TR/2015/WD-clipboard-apis-20151215/'>https://www.w3.org/TR/2015/WD-clipboard-apis-20151215/</a><br>
-
-            associated <a href=
-            'https://lists.w3.org/Archives/Member/member-webapi/2006Nov/0009.html'>
-            Call for Exclusion</a> on 16 November 2006 ended on 14 April
-            2007<br>
-            Produced under <a href=
-            "https://www.w3.org/2006/webapi/admin/charter">Web API Working
-            Group charter</a>
-          </dd>
-          <dt id="1323" class='spec'>
-            <a href='https://www.w3.org/TR/input-events-1/' rel=
-            'versionof'>Input Events Level 1</a><br>
-            Latest publication: <a href=
-            'https://www.w3.org/TR/2018/WD-input-events-1-20181109/'>09
-            November 2018</a>
-          </dt>
-          <dd>
-            Reference Draft: <a href=
-            'https://www.w3.org/TR/2016/WD-input-events-20160830/'>https://www.w3.org/TR/2016/WD-input-events-20160830/</a><br>
-
-            associated <a href=
-            'https://lists.w3.org/Archives/Member/member-cfe/2016Aug/0006.html'>
-            Call for Exclusion</a> on 30 August 2016 ended on 27 January
-            2017<br>
-            Produced under Working Group Charter:
-            https://www.w3.org/2015/10/webplatform-charter.html
-          </dd>
-          <dt id="1421" class='spec'>
-            <a href='https://www.w3.org/TR/input-events-2/' rel=
-            'versionof'>Input Events Level 2</a><br>
-            Latest publication: <a href=
-            'https://www.w3.org/TR/2018/WD-input-events-2-20181108/'>08
-            November 2018</a>
-          </dt>
-          <dd>
-            Reference Draft: <a href=
-            "https://www.w3.org/TR/2017/WD-input-events-2-20170321/">https://www.w3.org/TR/2017/WD-input-events-2-20170321/</a><br>
-          </dd>
-          <dt id="1195" class='spec'>
-            <a href='https://www.w3.org/TR/selection-api/' rel=
-            'versionof'>Selection API</a><br>
-            Latest publication: <a href=
-            'https://www.w3.org/TR/2018/WD-selection-api-20181018/'>18 October
-            2018</a>
-          </dt>
-          <dd>
-            Reference Draft: <a href=
-            'https://www.w3.org/TR/2015/WD-selection-api-20151124/'>https://www.w3.org/TR/2015/WD-selection-api-20151124/</a><br>
-
-            associated <a href=
-            'https://lists.w3.org/Archives/Member/member-cfe/2014Oct/0002.html'>
-            Call for Exclusion</a> on 07 October 2014 ended on 06 March
-            2015<br>
-            Produced under <a href=
-            "https://www.w3.org/2014/06/webapps-charter.html">Web Applications
-            Working Group charter</a>
-          </dd>
           <dt id="1233" class='spec'>
             <a href='https://www.w3.org/TR/html-aria/' rel='versionof'>ARIA in
             HTML</a><br>
@@ -1239,6 +1119,24 @@
             Call for Exclusion</a> on 01 June 2017 ended on 31 July 2017<br>
             Produced under Working Group Charter:
             http://www.w3.org/2016/11/webplatform-charter.html
+          </dd>
+          <dd>
+            Estimated Completion: 2 years
+          </dd>
+          <dt id="webshare" class='spec'>
+            <a href='https://www.w3.org/TR/web-share/' rel='versionof'>Web Share API</a><br>
+            Latest publication: <a href=
+            'https://www.w3.org/TR/2021/WD-web-share-20210120/'>20 January 2021</a>
+          </dt>
+          <dd>
+            Reference Draft: <a href=
+            'https://www.w3.org/TR/2019/WD-web-share-20191217/'>https://www.w3.org/TR/2019/WD-web-share-20191217/</a><br>
+
+            associated <a href=
+            'https://lists.w3.org/Archives/Member/member-cfe/2019Dec/0012.html'>
+            Call for Exclusion</a> on 17 Dec 2019 ended on 15 MAY 2020<br>
+            Produced under Working Group Charter:
+            https://www.w3.org/2017/08/webplatform-charter.html
           </dd>
           <dd>
             Estimated Completion: 2 years
