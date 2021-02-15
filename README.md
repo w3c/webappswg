@@ -13,6 +13,7 @@ If you have any admin related issues, please [file them](https://github.com/w3c/
  * 📄 [File API](https://github.com/w3c/fileAPI) - [Eds Draft](https://w3c.github.io/FileAPI/).
  * 🎮 [GamePad API](https://github.com/w3c/gamepad) - [Eds Draft](https://w3c.github.io/gamepad/).
  * ♿️ [HTML Accessibility API Mappings 1.0](https://github.com/w3c/html-aam) - [Eds Draft](https://w3c.github.io/html-aam/)
+ * 🗂 [Indexed Database API](https://github.com/w3c/IndexedDB) - [Eds Draft](https://w3c.github.io/IndexedDB/)
  * ✍ [Input Events Level 1](https://rawgit.com/w3c/input-events/v1/index.html).
  * ✍️️️️ [Input Events Level 2](https://w3c.github.io/input-events/).
  * 👀 [Intersection Observer](https://github.com/w3c/IntersectionObserver) - [Eds Draft](https://w3c.github.io/IntersectionObserver/).
