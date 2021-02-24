@@ -8,8 +8,8 @@ If you have any admin related issues, please [file them](https://github.com/w3c/
 
 
  * ♿️ [ARIA in HTML](https://github.com/w3c/html-aria/) - [Eds Draft](http://w3c.github.io/html-aria/).
- * 🦡 [Badging API](https://github.com/w3c/badging)- [Eds Draft](https://w3c.github.io/badging/).
- * 📋 [Clipboard APIs](https://github.com/w3c/clipboard-apis)- [Eds Draft](https://w3c.github.io/clipboard-apis/).
+ * 🦡 [Badging API](https://github.com/w3c/badging) - [Eds Draft](https://w3c.github.io/badging/).
+ * 📋 [Clipboard APIs](https://github.com/w3c/clipboard-apis) - [Eds Draft](https://w3c.github.io/clipboard-apis/).
  * 📄 [File API](https://github.com/w3c/fileAPI) - [Eds Draft](https://w3c.github.io/FileAPI/).
  * 🎮 [GamePad API](https://github.com/w3c/gamepad) - [Eds Draft](https://w3c.github.io/gamepad/).
  * ♿️ [HTML Accessibility API Mappings 1.0](https://github.com/w3c/html-aam) - [Eds Draft](https://w3c.github.io/html-aam/)
