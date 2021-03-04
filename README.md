@@ -10,7 +10,6 @@ If you have any admin related issues, please [file them](https://github.com/w3c/
  * 🦡 [Badging API](https://github.com/w3c/badging) - [Eds Draft](https://w3c.github.io/badging/).
  * 📄 [File API](https://github.com/w3c/fileAPI) - [Eds Draft](https://w3c.github.io/FileAPI/).
  * 🎮 [GamePad API](https://github.com/w3c/gamepad) - [Eds Draft](https://w3c.github.io/gamepad/).
- * ♿️ [HTML Accessibility API Mappings 1.0](https://github.com/w3c/html-aam) - [Eds Draft](https://w3c.github.io/html-aam/)
  * 👀 [Intersection Observer](https://github.com/w3c/IntersectionObserver) - [Eds Draft](https://w3c.github.io/IntersectionObserver/).
  * 🖱 [Pointer Lock 2.0](https://github.com/w3c/pointerlock/) - [Eds Draft](https://w3c.github.io/pointerlock/).
  * 📲 [Push API](https://github.com/w3c//push-api/) - [Eds Draft](https://w3c.github.io/push-api/).
