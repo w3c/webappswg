@@ -21,7 +21,7 @@ If you have any admin related issues, please [file them](https://github.com/w3c/
 
 # Notes
 
- * 
+ * [Web App Manifest - Application Information](https://github.com/w3c/manifest-app-info) - [Eds Draft](https://w3c.github.io/manifest-app-info/)
  
  
 ## Chairs 🛋
