@@ -10,6 +10,7 @@ If you have any admin related issues, please [file them](https://github.com/w3c/
  * 🦡 [Badging API](https://github.com/w3c/badging) - [Eds Draft](https://w3c.github.io/badging/).
  * 📄 [File API](https://github.com/w3c/fileAPI) - [Eds Draft](https://w3c.github.io/FileAPI/).
  * 🎮 [GamePad API](https://github.com/w3c/gamepad) - [Eds Draft](https://w3c.github.io/gamepad/).
+ * 🖼 [Image Resource](https://www.w3.org/TR/image-resource/) - [Eds Draft](https://w3c.github.io/image-resouce/)
  * 👀 [Intersection Observer](https://github.com/w3c/IntersectionObserver) - [Eds Draft](https://w3c.github.io/IntersectionObserver/).
  * 🖱 [Pointer Lock 2.0](https://github.com/w3c/pointerlock/) - [Eds Draft](https://w3c.github.io/pointerlock/).
  * 📲 [Push API](https://github.com/w3c//push-api/) - [Eds Draft](https://w3c.github.io/push-api/).
@@ -17,6 +18,11 @@ If you have any admin related issues, please [file them](https://github.com/w3c/
  * ⌨️ [UI Events](https://github.com/w3c/uievents/) - [Eds Draft](https://w3c.github.io/uievents/).
  * 👾 [Web App Manifest](https://github.com/w3c/manifest/) - [Eds Draft](https://www.w3.org/TR/appmanifest/).
  * 🎁 [Web Share](https://github.com/w3c/web-share/) - [Eds Draft](https://w3c.github.io/web-share/).
+
+# Notes
+
+ * 
+ 
  
 ## Chairs 🛋
 
