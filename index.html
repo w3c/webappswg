@@ -1,497 +1,696 @@
-<!DOCTYPE html>
-<meta charset="utf-8" />
-<meta name="viewport" content="width=device-width, initial-scale=1" />
-<title>WebApps WG</title>
-<link rel="preconnect" href="https://api.specref.org" />
-<link rel="preconnect" href="https://api.w3.org" />
-<script src="https://unpkg.com/lighterhtml"></script>
-<style>
-  @keyframes fadeInOpacity {
-    0% {
-      opacity: 0;
+<!DOCTYPE html><html lang="en-US" data-apiary-key="d8olk97vtbswskckoko0k840wc4co8k" data-gid="114929"><head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title class="group-data" data-query="group">Web Applications Working Group</title>
+  <meta name="description" content="A group page">
+  <link rel="preconnect" href="https://api.w3.org">
+  <link rel="preconnect" href="https://w3c.github.io">
+  <!--
+    To get your own API key, go to https://www.w3.org/users/myprofile/apikeys
+  -->
+  <style>
+    @keyframes fadeInOpacity {
+      0% {
+        opacity: 0;
+      }
+
+      100% {
+        opacity: 1;
+      }
     }
-    100% {
-      opacity: 1;
-    }
-  }
-  body {
-    display: flex;
-    flex-direction: column;
-    max-width: 1240px;
-    margin: 0 auto;
-    font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
-    padding: 0 0.25cm;
-  }
-  a:link,
-  a:visited {
-    text-decoration: none;
-    color: #0d1321;
-  }
 
-  a:hover {
-    color: #1955a5;
-  }
-
-  dl,
-  h1,
-  h2,
-  ul,
-  p {
-    margin: 0;
-    padding: 0;
-    font-weight: normal;
-  }
-
-  li {
-    list-style: none;
-  }
-
-  header {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    margin: 2rem 0 4rem;
-    flex-wrap: wrap;
-  }
-
-  header h1 {
-    font-weight: normal;
-    color: #0d1321;
-    font-size: 1.7em;
-  }
-
-  header p {
-    flex: 100%;
-    padding: 0 0em 0;
-  }
-
-  header nav a:hover {
-    color: black;
-    padding-bottom: 0.1cm;
-    border-bottom: 0.1cm solid black;
-  }
-
-  main {
-    margin-bottom: 4rem;
-  }
-
-  nav {
-    flex-grow: 1;
-  }
-
-  nav ul {
-    display: flex;
-    justify-content: flex-end;
-  }
-
-  header nav ul li:not(:first-child) {
-    margin-left: 0.5cm;
-  }
-
-  header li {
-    margin: 0;
-    padding: 0;
-  }
-
-  main section {
-    display: flex;
-    align-items: center;
-    align-items: stretch;
-    margin-bottom: 1cm;
-  }
-
-  main section > h2 {
-    font-size: 1.3em;
-    min-width: 4cm;
-    font-weight: bold;
-  }
-
-  #specs dl.loading {
-    max-height: 1cm;
-    overflow: hidden;
-  }
-
-  #specs dl {
-    display: flex;
-    justify-content: space-between;
-    flex-wrap: wrap;
-    margin: 0;
-    max-height: 1000vh;
-    transition: max-height 5s ease-in-out 0s;
-    overflow: hidden;
-  }
-
-  #specs .status {
-    color: #333;
-  }
-
-  #specs div {
-    flex: 1 0 35%;
-    margin-bottom: 0.5cm;
-    opacity: 1;
-    max-width: calc(50% - 0.4cm);
-    animation-name: fadeInOpacity;
-    animation-iteration-count: 1;
-    animation-timing-function: ease-in;
-    animation-duration: 1s;
-  }
-
-  #specs dd {
-    margin: 0.1cm 0 0 0;
-    font-size: 0.8em;
-    color: #555;
-  }
-
-  #about {
-    height: 3cm;
-    display: flex;
-    align-items: stretch;
-    margin-bottom: 3rem;
-  }
-
-  #about * {
-    flex: 1;
-    box-sizing: border-box;
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-    text-align: center;
-  }
-
-  #about h2 {
-    color: #748cab;
-    background-color: #1d2d44;
-  }
-
-  #about p {
-    padding: 1rem;
-    text-align: center;
-  }
-
-  footer {
-    padding: 1cm 1cm;
-    border-bottom: thin solid silver;
-    border-top: thin solid silver;
-    margin-bottom: 1cm;
-  }
-
-  footer ul {
-    align-items: stretch;
-  }
-
-  footer nav ul {
-    justify-content: space-between;
-    align-items: stretch;
-  }
-
-  .loading {
-    height: 1.5cm;
-  }
-
-  #participations {
-    columns: 4;
-    column-gap: 2cm;
-  }
-  #participations li {
-    margin-bottom: 0.2cm;
-    break-inside: avoid;
-  }
-
-  @media (max-width: 700px) {
     body {
-      padding: 0;
-    }
-    header {
-      color: white;
       display: flex;
+      flex-direction: column;
+      max-width: 1240px;
+      margin: 0 auto;
+      font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+      padding: 0 0.25cm;
+    }
+
+    a:link,
+    a:visited {
+      text-decoration: none;
+      color: #0d1321;
+    }
+
+    a:hover {
+      color: #1955a5;
+    }
+
+    dl,
+    h1,
+    h2,
+    ul,
+    p {
       margin: 0;
-      background: black;
-      padding: 0.2cm 0cm;
+      padding: 0;
+      font-weight: normal;
+    }
+
+    li {
+      list-style: none;
+    }
+
+    header {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      margin: 2rem 0 4rem;
+      flex-wrap: wrap;
     }
 
     header h1 {
-      flex: 1;
-      order: 1;
-      font-weight: bold;
-      font-size: 1em;
-      text-align: center;
-      color: white;
+      font-weight: normal;
+      color: #0d1321;
+      font-size: 1.7em;
     }
 
     header p {
-      order: 2;
-      font-size: 0.8em;
-      text-align: center;
       flex: 100%;
+      padding: 0 0em 0;
     }
 
-    header nav {
-      margin-top: 0.25cm;
-      order: 3;
-      padding: 0 0.2cm;
-    }
-
-    header nav ul {
-      padding: 0.2cm 0.2cm;
-      display: flex;
-      justify-content: space-between;
-    }
-
-    header nav ul li:not(:first-child) {
-      margin-left: 0.3cm;
-    }
-
-    header nav a:link,
-    header nav a:visited {
-      color: white;
-    }
-
-    main section:first-child {
-      margin-top: 1cm;
-    }
-
-    main section {
-      display: block;
-      padding: 0 1cm;
-    }
-
-    main section h2 {
-      margin-bottom: 0.5cm;
-    }
-
-    #specs div {
-      flex: 1 0 100%;
-      max-width: unset;
+    header nav a:hover {
+      color: black;
+      padding-bottom: 0.1cm;
+      border-bottom: 0.1cm solid black;
     }
 
     main {
-      margin-bottom: 0;
+      margin-bottom: 4rem;
     }
 
-    #participations {
-      columns: 2;
+    nav {
+      flex-grow: 1;
     }
 
-    footer {
-      padding: 0.2cm 0 0.2cm 0;
-      border-bottom: thin solid silver;
-      border-top: thin solid silver;
-      font-size: 0.75em;
+    nav ul {
+      display: flex;
+      justify-content: flex-end;
+    }
+
+    header nav ul li:not(:first-child) {
+      margin-left: 0.5cm;
+    }
+
+    header li {
+      margin: 0;
+      padding: 0;
+    }
+
+    main section {
+      display: flex;
+      align-items: center;
+      align-items: stretch;
       margin-bottom: 1cm;
     }
 
-    footer nav {
-      padding: 0 0.2cm;
+    main section>h2 {
+      font-size: 1.3em;
+      min-width: 4cm;
+      font-weight: bold;
     }
-  }
-</style>
-<script>
-  const { render, html } = lighterhtml;
-  const groupId = "114929"; // -114929 //83482
-  const groupInfoPromise = getW3CData(`/groups/${groupId}`);
-  function getW3CData(queryPath) {
-    const apiURL = new URL(queryPath, "https://api.w3.org/");
-    apiURL.searchParams.set("apikey", "97i7kddpljc4404so8co8oows0c8soo");
-    return fetch(apiURL).then(r => r.json());
-  }
 
-  document.addEventListener("DOMContentLoaded", async () => {
-    await Promise.all([
-      renderSpecs(groupInfoPromise),
-      renderMission(groupInfoPromise),
-      renderInlinePeople(groupInfoPromise, "chairs", "chairs"),
-      renderInlinePeople(groupInfoPromise, "team-contacts", "team-contacts"),
-      renderParticipations(groupInfoPromise),
-    ]);
-  });
-
-  async function renderParticipations(groupInfoPromise) {
-    const groupInfo = await groupInfoPromise;
-    const { href } = groupInfo._links.participations;
-    const participants = await getW3CData(href);
-    const elem = document.getElementById("participations");
-    if (!participants._links.participations) {
-      render(
-        elem,
-        () =>
-          html`
-            <li>No members yet.</li>
-          `
-      );
-      return;
+    #specs dl,
+    #repos dl,
+    #events dl {
+      display: flex;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      margin: 0;
+      max-height: 1000vh;
+      transition: max-height 5s ease-in-out 0s;
+      overflow: hidden;
     }
-    render(
-      elem,
-      () =>
-        html`
-          ${participants._links.participations
-            .sort(({ title: a }, { title: b }) => a.localeCompare(b))
-            .map(
-              ({ title }) =>
-                html`
-                  <li>${title}</li>
-                `
-            )}
-        `
-    );
-  }
 
-  async function renderMission(groupInfoPromise) {
-    const missionPara = document.querySelector("#mission p");
-    missionPara.classList.add("loading");
-    let mission;
-    try {
-      const groupInfo = await groupInfoPromise;
-      mission = groupInfo.description;
-    } catch (err) {
-      console.error(err);
-      mission = "Oops. Something went wrong fetching the mission.";
-    } finally {
-      render(
-        missionPara,
-        () =>
-          html`
-            ${mission}
-          `
-      );
-      missionPara.classList.remove("loading");
+    #specs .status,
+    #repos .type {
+      color: #333;
     }
-  }
 
-  async function renderInlinePeople(groupInfoPromise, prop, query) {
-    const elem = document.getElementById(query);
-    const groupInfo = await groupInfoPromise;
-    const { href } = groupInfo._links[prop];
-    const data = await getW3CData(href);
-    const people = data._links[prop];
-    if (!people) {
-      render(
-        elem,
-        () =>
-          html`
-            No one assigned yet.
-          `
-      );
-      return;
+    #specs div,
+    #repos div,
+    #events div {
+      flex: 1 0 35%;
+      margin-bottom: 0.5cm;
+      opacity: 1;
+      max-width: calc(50% - 0.4cm);
+      animation-name: fadeInOpacity;
+      animation-iteration-count: 1;
+      animation-timing-function: ease-in;
+      animation-duration: 1s;
     }
-    const names = people.map(({ title }) => title).join(", ");
-    render(
-      elem,
-      () => html`
-        ${names}.
-      `
-    );
-  }
-  async function renderSpecs() {
-    const specList = document.getElementById("specList");
-    let specs;
-    try {
-      const groupInfo = await groupInfoPromise;
 
-      const {
-        _links: {
-          specifications: { href: specsHref },
-        },
-      } = groupInfo;
-      const {
-        _links: { specifications },
-      } = await getW3CData(specsHref);
-      specs = specifications;
-    } catch (err) {
-      specList.innerHTML = `
-            <p>
-              Oops! something went wrong.
-              See our <a href="https://www.w3.org/2019/05/webapps-charter.html">charter</a> for the list of specs.
-            </p>
-          `;
-      return;
+    #specs dd,
+    #repos dd,
+    #events dd {
+      margin: 0.1cm 0 0 0;
+      font-size: 0.8em;
+      color: #555;
     }
-    if (!specs) {
-      render(
-        specList,
-        () =>
-          html`
-            Working group hasn't produced or inherited any specifications.
-          `
-      );
-      return;
-    }
-    // process the specifications
-    const divPromises = specs
-      .sort(({ title: titleA }, { title: titleB }) => titleA.localeCompare(titleB))
-      .map(async ({ href: specHref, title }) => {
-        const div = document.createElement("div");
-        const specData = await getW3CData(specHref);
-        const { title: specTitle, shortname, description, shortlink } = specData;
-        const editorsDraft = specData["editor-draft"];
-        const { title: statusText } = specData._links["latest-version"];
-        div.id = shortname;
-        const tempDesc = document.createElement("div");
-        tempDesc.innerHTML = description;
-        render(
-          div,
-          () => html`
-            <dt>
-              <a href="${shortlink}"
-                >${specTitle} - <span class="status">${statusText}</span></a
-              >
-            </dt>
-            <dd>
-              ${tempDesc.firstElementChild.childNodes}
-            </dd>
-          `
-        );
-        return div;
-      });
-    const divs = await Promise.all(divPromises);
-    specList.firstElementChild.remove();
-    specList.classList.remove("loading");
-    specList.append(...divs);
-  }
 
-</script>
+    #about {
+      height: 3cm;
+      display: flex;
+      align-items: stretch;
+      margin-bottom: 3rem;
+    }
+
+    #about * {
+      flex: 1;
+      box-sizing: border-box;
+      display: flex;
+      justify-content: center;
+      flex-direction: column;
+      text-align: center;
+    }
+
+    #about h2 {
+      color: #748cab;
+      background-color: #1d2d44;
+    }
+
+    #about p {
+      padding: 1rem;
+      text-align: center;
+    }
+
+    footer {
+      padding: 1cm 1cm;
+      border-bottom: thin solid silver;
+      border-top: thin solid silver;
+      margin-bottom: 1cm;
+    }
+
+    footer ul {
+      align-items: stretch;
+    }
+
+    footer nav ul {
+      justify-content: space-between;
+      align-items: stretch;
+    }
+
+    .loading {
+      height: 1.5cm;
+    }
+
+    #participations {
+      columns: 4;
+      column-gap: 2cm;
+    }
+
+    #participations li {
+      margin-bottom: 0.2cm;
+      break-inside: avoid;
+    }
+
+    @media (max-width: 700px) {
+      body {
+        padding: 0;
+      }
+
+      header {
+        color: white;
+        display: flex;
+        margin: 0;
+        background: black;
+        padding: 0.2cm 0cm;
+      }
+
+      header h1 {
+        flex: 1;
+        order: 1;
+        font-weight: bold;
+        font-size: 1em;
+        text-align: center;
+        color: white;
+      }
+
+      header p {
+        order: 2;
+        font-size: 0.8em;
+        text-align: center;
+        flex: 100%;
+      }
+
+      header nav {
+        margin-top: 0.25cm;
+        order: 3;
+        padding: 0 0.2cm;
+      }
+
+      header nav ul {
+        padding: 0.2cm 0.2cm;
+        display: flex;
+        justify-content: space-between;
+      }
+
+      header nav ul li:not(:first-child) {
+        margin-left: 0.3cm;
+      }
+
+      header nav a:link,
+      header nav a:visited {
+        color: white;
+      }
+
+      main section:first-child {
+        margin-top: 1cm;
+      }
+
+      main section {
+        display: block;
+        padding: 0 1cm;
+      }
+
+      main section h2 {
+        margin-bottom: 0.5cm;
+      }
+
+      #specs div {
+        flex: 1 0 100%;
+        max-width: unset;
+      }
+
+      main {
+        margin-bottom: 0;
+      }
+
+      #participations {
+        columns: 2;
+      }
+
+      footer {
+        padding: 0.2cm 0 0.2cm 0;
+        border-bottom: thin solid silver;
+        border-top: thin solid silver;
+        font-size: 0.75em;
+        margin-bottom: 1cm;
+      }
+
+      footer nav {
+        padding: 0 0.2cm;
+      }
+    }
+  </style>
+</head>
+
 <body>
-  <header>
+  <header class="group-data" data-query="group">
     <h1>Web Applications Working Group</h1>
     <nav>
       <ul>
         <li>
-          <a href="https://www.w3.org/2019/05/webapps-charter.html">Charter</a>
+          <a href="https://www.w3.org/2020/12/webapps-wg-charter.html">Charter</a>
         </li>
-        <li><a href="https://github.com/w3c/webappswg">GitHub</a></li>
-        <li>
-          <a href="https://lists.w3.org/Archives/Public/public-webapps/"
-            >Mailing list</a
-          >
-        </li>
+        <li data-query="services.*[type=repository]"><a href="https://www.w3.org/PM/Groups/repositories.html?gid=114929">Repositories</a></li>
+        <li data-query="services.*[type=lists]"><a href="https://lists.w3.org/Archives/Public/public-webapps/">Mailing
+                list</a></li>
+         
+         
+         
+         
       </ul>
     </nav>
   </header>
-  <main>
+  <main class="group-data" data-query="group">
     <section id="mission">
       <h2>Mission</h2>
-      <p>...Loading group mission...</p>
+      <p>The mission of the Web Applications Working Group (WebApps WG) is to produce specifications that facilitate the development of client-side web applications.</p>
     </section>
     <section id="specs">
       <h2>Specs</h2>
-      <dl id="specList" class="loading">
-        <p>... Fetching our working group's specs...</p>
-      </dl>
+      <dl id="specList" data-query="specifications.*[latest-status!=Retired]">
+          <div id="input-events-1">
+            <dt><a href="https://www.w3.org/TR/input-events-1/">Input Events Level 1</a> - <span class="status">Working Draft</span></dt>
+            <dd><p>This specification defines additions to events for text and related input to allow for the monitoring and manipulation of default browser behavior in the context of text editor applications and other applications that deal with text input and text formatting. This specification builds on the UI events spec.</p></dd>
+          </div>
+        
+          <div id="input-events-2">
+            <dt><a href="https://www.w3.org/TR/input-events-2/">Input Events Level 2</a> - <span class="status">Working Draft</span></dt>
+            <dd><p>This specification defines additions to events for text and related input to allow for the monitoring and manipulation of default browser behavior in the context of text editor applications and other applications that deal with text input and text formatting. This specification builds on the UI events spec.</p></dd>
+          </div>
+        
+          <div id="uievents">
+            <dt><a href="https://www.w3.org/TR/uievents/">UI Events</a> - <span class="status">Working Draft</span></dt>
+            <dd><p>This specification defines the Document Object Model Events Level 3, a generic platform- and language-neutral event system which allows registration of event handlers, describes event flow through a tree structure, and provides basic contextual information for each event. The Document Object Model Events Level 3 builds on the Document Object Model Events Level 2 [DOM2 Events].</p></dd>
+          </div>
+        
+          <div id="pointerlock-2">
+            <dt><a href="https://www.w3.org/TR/pointerlock-2/">Pointer Lock 2.0</a> - <span class="status">Working Draft</span></dt>
+            <dd><p>This specification defines an API that provides scripted access to raw mouse movement data while locking the target of mouse events to a single element and removing the cursor from view. This is an essential input mode for certain classes of applications, especially first person perspective 3D applications and 3D modeling software.</p></dd>
+          </div>
+        
+          <div id="FileAPI">
+            <dt><a href="https://www.w3.org/TR/FileAPI/">File API</a> - <span class="status">Working Draft</span></dt>
+            <dd><p>This specification provides an API for representing file objects in web applications, as well as programmatically selecting them and accessing their data.</p></dd>
+          </div>
+        
+          <div id="push-api">
+            <dt><a href="https://www.w3.org/TR/push-api/">Push API</a> - <span class="status">Working Draft</span></dt>
+            <dd><p>An API that provides Web applications with scripted access to server-sent application data.</p></dd>
+          </div>
+        
+          <div id="html-aam-1.0">
+            <dt><a href="https://www.w3.org/TR/html-aam-1.0/">HTML Accessibility API Mappings 1.0</a> - <span class="status">Working Draft</span></dt>
+            <dd><p>Defines how user agents map HTML 5.1 elements and attributes to platform accessibility APIs. This promotes interoperable exposure of roles, states, properties, and events and helps to ensure that this information appears in a manner consistent with author intent.</p></dd>
+          </div>
+        
+          <div id="screen-orientation">
+            <dt><a href="https://www.w3.org/TR/screen-orientation/">The Screen Orientation API</a> - <span class="status">Working Draft</span></dt>
+            <dd><p>Defines APIs to read screen orientation state and to lock the screen orientation to a specific state.</p></dd>
+          </div>
+        
+          <div id="web-share">
+            <dt><a href="https://www.w3.org/TR/web-share/">Web Share API</a> - <span class="status">Working Draft</span></dt>
+            <dd><p>This specification defines an API for sharing text, links and other content to an arbitrary destination of the user's choice. </p></dd>
+          </div>
+        
+          <div id="selection-api">
+            <dt><a href="https://www.w3.org/TR/selection-api/">Selection API</a> - <span class="status">Working Draft</span></dt>
+            <dd><p>This specification defines APIs to select objects within a document.</p></dd>
+          </div>
+        
+          <div id="intersection-observer">
+            <dt><a href="https://www.w3.org/TR/intersection-observer/">Intersection Observer</a> - <span class="status">Working Draft</span></dt>
+            <dd><p>This specification describes an API that can be used to understand the visibility and position of DOM elements ("targets") relative to a containing element or to the top-level viewport ("root"). The position is delivered asynchronously and is useful for understanding the visibility of elements and implementing pre-loading and deferred loading of DOM content.</p></dd>
+          </div>
+        
+          <div id="clipboard-apis">
+            <dt><a href="https://www.w3.org/TR/clipboard-apis/">Clipboard API and events</a> - <span class="status">Working Draft</span></dt>
+            <dd><p>This document describes apis for clipboard operations such as copy/cut and paste, or drag and drop in web applications.</p></dd>
+          </div>
+        
+          <div id="IndexedDB-3">
+            <dt><a href="https://www.w3.org/TR/IndexedDB-3/">Indexed Database API 3.0</a> - <span class="status">Working Draft</span></dt>
+            <dd><p>This document defines APIs for a database of records holding simple values and hierarchical objects. Each record consists of a key and some value. Moreover, the database maintains indexes over records it stores. An application developer directly uses an API to locate records either by their key or by using an index. A query language can be layered on this API. An indexed database can be implemented using a persistent B-tree data structure.</p></dd>
+          </div>
+        
+          <div id="manifest-app-info">
+            <dt><a href="https://www.w3.org/TR/manifest-app-info/">Web App Manifest - Application Information</a> - <span class="status">Group Note</span></dt>
+            <dd><p>This document is a registry of supplementary members for the Web App Manifest specification that provide additional metadata to an application manifest. This metadata can be used in a digital storefront or other surfaces where this web application may be marketed or distributed, or to enhance an installation dialog when installing a web application.</p></dd>
+          </div>
+        
+          <div id="image-resource">
+            <dt><a href="https://www.w3.org/TR/image-resource/">Image Resource</a> - <span class="status">Working Draft</span></dt>
+            <dd><p>This document defines the concept of an "image resource" and a corresponding WebIDL ImageResource dictionary. Web APIs can use the ImageResource dictionary to represent an image resource in contexts where an HTMLImageElement is not suitable or available (e.g., in a Worker). </p></dd>
+          </div>
+        
+          <div id="appmanifest">
+            <dt><a href="https://www.w3.org/TR/appmanifest/">Web Application Manifest</a> - <span class="status">Working Draft</span></dt>
+            <dd><p>This specification defines a manifest, which provides developers with a centralized place to put metadata about a web application.</p></dd>
+          </div>
+        
+          <div id="html-aria">
+            <dt><a href="https://www.w3.org/TR/html-aria/">ARIA in HTML</a> - <span class="status">Working Draft</span></dt>
+            <dd><p>This specification defines the web developer rules (author conformance requirements) for the use of WAI ARIA attributes on HTML elements. It also defines requirements for Conformance Checking tools.</p></dd>
+          </div>
+        
+          <div id="gamepad">
+            <dt><a href="https://www.w3.org/TR/gamepad/">Gamepad</a> - <span class="status">Working Draft</span></dt>
+            <dd><p>Defines a low-level interface that represents gamepad devices.</p></dd>
+          </div>
+        </dl>
     </section>
+    <section id="repos">
+      <h2>Repos</h2>
+      <dl id="repoList" data-query="repositories">
+          <div id="w3c-clipboard-apis">
+            <dt><a href="https://github.com/w3c/clipboard-apis/">w3c/clipboard-apis</a>
+              <span class="type">(rec-track)</span></dt>
+            <dd>
+              <p>Clipboard API and events</p>
+            </dd>
+          </div>
+        
+          <div id="w3c-editing">
+            <dt><a href="https://github.com/w3c/editing/">w3c/editing</a>
+              <span class="type">(rec-track)</span></dt>
+            <dd>
+              <p>Specs and explainers maintained by the editing task force</p>
+            </dd>
+          </div>
+        
+          <div id="w3c-FileAPI">
+            <dt><a href="https://github.com/w3c/FileAPI/">w3c/FileAPI</a>
+              <span class="type">(rec-track)</span></dt>
+            <dd>
+              <p>File API</p>
+            </dd>
+          </div>
+        
+          <div id="w3c-gamepad">
+            <dt><a href="https://github.com/w3c/gamepad/">w3c/gamepad</a>
+              <span class="type">(rec-track)</span></dt>
+            <dd>
+              <p>Gamepad</p>
+            </dd>
+          </div>
+        
+          <div id="w3c-html-aria">
+            <dt><a href="https://github.com/w3c/html-aria/">w3c/html-aria</a>
+              <span class="type">(rec-track)</span></dt>
+            <dd>
+              <p>ARIA in HTML</p>
+            </dd>
+          </div>
+        
+          <div id="w3c-image-resource">
+            <dt><a href="https://github.com/w3c/image-resource/">w3c/image-resource</a>
+              <span class="type">(rec-track)</span></dt>
+            <dd>
+              <p>An ImageResource definition for web APIs</p>
+            </dd>
+          </div>
+        
+          <div id="w3c-IndexedDB">
+            <dt><a href="https://github.com/w3c/IndexedDB/">w3c/IndexedDB</a>
+              <span class="type">(rec-track)</span></dt>
+            <dd>
+              <p>Indexed Database API</p>
+            </dd>
+          </div>
+        
+          <div id="w3c-input-events">
+            <dt><a href="https://github.com/w3c/input-events/">w3c/input-events</a>
+              <span class="type">(rec-track)</span></dt>
+            <dd>
+              <p>Input Events</p>
+            </dd>
+          </div>
+        
+          <div id="w3c-IntersectionObserver">
+            <dt><a href="https://github.com/w3c/IntersectionObserver/">w3c/IntersectionObserver</a>
+              <span class="type">(rec-track)</span></dt>
+            <dd>
+              <p>Intersection Observer</p>
+            </dd>
+          </div>
+        
+          <div id="w3c-manifest">
+            <dt><a href="https://github.com/w3c/manifest/">w3c/manifest</a>
+              <span class="type">(rec-track)</span></dt>
+            <dd>
+              <p>Manifest for web apps</p>
+            </dd>
+          </div>
+        
+          <div id="w3c-pointerlock">
+            <dt><a href="https://github.com/w3c/pointerlock/">w3c/pointerlock</a>
+              <span class="type">(rec-track)</span></dt>
+            <dd>
+              <p>Pointer Lock</p>
+            </dd>
+          </div>
+        
+          <div id="w3c-push-api">
+            <dt><a href="https://github.com/w3c/push-api/">w3c/push-api</a>
+              <span class="type">(rec-track)</span></dt>
+            <dd>
+              <p>Push API</p>
+            </dd>
+          </div>
+        
+          <div id="w3c-screen-orientation">
+            <dt><a href="https://github.com/w3c/screen-orientation/">w3c/screen-orientation</a>
+              <span class="type">(rec-track)</span></dt>
+            <dd>
+              <p>The screen orientation specification</p>
+            </dd>
+          </div>
+        
+          <div id="w3c-selection-api">
+            <dt><a href="https://github.com/w3c/selection-api/">w3c/selection-api</a>
+              <span class="type">(rec-track)</span></dt>
+            <dd>
+              <p>Selection API</p>
+            </dd>
+          </div>
+        
+          <div id="w3c-uievents">
+            <dt><a href="https://github.com/w3c/uievents/">w3c/uievents</a>
+              <span class="type">(rec-track)</span></dt>
+            <dd>
+              <p>UI Events</p>
+            </dd>
+          </div>
+        
+          <div id="w3c-uievents-code">
+            <dt><a href="https://github.com/w3c/uievents-code/">w3c/uievents-code</a>
+              <span class="type">(rec-track)</span></dt>
+            <dd>
+              <p>UI Events KeyboardEvent code Values</p>
+            </dd>
+          </div>
+        
+          <div id="w3c-uievents-key">
+            <dt><a href="https://github.com/w3c/uievents-key/">w3c/uievents-key</a>
+              <span class="type">(rec-track)</span></dt>
+            <dd>
+              <p>UI Events KeyboardEvents key Values</p>
+            </dd>
+          </div>
+        
+          <div id="w3c-web-share">
+            <dt><a href="https://github.com/w3c/web-share/">w3c/web-share</a>
+              <span class="type">(rec-track)</span></dt>
+            <dd>
+              <p>Web API proposal for sharing data from a web page</p>
+            </dd>
+          </div>
+        
+          <div id="w3c-manifest-app-info">
+            <dt><a href="https://github.com/w3c/manifest-app-info/">w3c/manifest-app-info</a>
+              <span class="type">(note)</span></dt>
+            <dd>
+              <p>Web App Manifest - Application Information</p>
+            </dd>
+          </div>
+        
+          <div id="w3c-using-aria">
+            <dt><a href="https://github.com/w3c/using-aria/">w3c/using-aria</a>
+              <span class="type">(note)</span></dt>
+            <dd>
+              <p>Using ARIA</p>
+            </dd>
+          </div>
+        
+          <div id="w3c-contentEditable">
+            <dt><a href="https://github.com/w3c/contentEditable/">w3c/contentEditable</a>
+               </dt>
+            <dd>
+              <p></p>
+            </dd>
+          </div>
+        
+          <div id="w3c-webappswg">
+            <dt><a href="https://github.com/w3c/webappswg/">w3c/webappswg</a>
+              <span class="type">(homepage)</span></dt>
+            <dd>
+              <p>Web Applications Working Group</p>
+            </dd>
+          </div>
+        </dl>
+    </section>
+    <!--
+    <section id="events">
+      <h2>Face-to-face meetings</h2>
+      <div data-if="events.*">
+        <dl id="eventList" data-query="events">
+          <div>
+            <dt><a href="${href}">${summary}</a></dt>
+            <dd>
+              <p>${location} - ${start} to ${end}</p>
+            </dd>
+          </div>
+        </dl>
+        <p>Group has no face-to-face meetings scheduled.</p>
+      </div>
+    </section>
+    -->
     <section id="Contacts">
       <h2>Contacts</h2>
       <dl>
         <dt>Chairs:</dt>
-        <dd id="chairs"></dd>
+        <dd id="chairs">
+          <span data-query="chairs">
+              <a href="https://github.com/marcoscaceres">Marcos Caceres</a>,
+            
+              <a href="https://github.com/LJWatson">Léonie Watson</a>,
+            </span>
+        </dd>
         <dt>Team contacts:</dt>
-        <dd id="team-contacts"></dd>
+        <dd id="team-contacts">
+          <span data-query="team-contacts">
+              <a href="https://github.com/siusin">Xiaoqian Wu</a>,
+              </span>
+        </dd>
       </dl>
     </section>
     <section>
       <h2>Members</h2>
-      <ul id="participations"></ul>
+      <ul id="participations" data-query="participations.*[individual=false]">
+        <li>Apple, Inc.</li>
+      
+        <li>Baidu, Inc.</li>
+      
+        <li>Coil Technologies, Inc.</li>
+      
+        <li>eyeo GmbH</li>
+      
+        <li>Google LLC</li>
+      
+        <li>IBM Corporation</li>
+      
+        <li>Igalia</li>
+      
+        <li>Intel Corporation</li>
+      
+        <li>Microsoft Corporation</li>
+      
+        <li>Mozilla Foundation</li>
+      
+        <li>OpenJS Foundation</li>
+      
+        <li>Samsung Electronics Co., Ltd.</li>
+      
+        <li>Shenzhen Institute of Information Technology</li>
+      
+        <li>Sony Group Corporation</li>
+      
+        <li>TetraLogical Services Ltd</li>
+      
+        <li>The New York Times</li>
+      
+        <li>The Washington Post</li>
+      
+        <li>Thinktecture</li>
+      
+        <li>TPGi</li>
+      
+        <li>Wikimedia Foundation</li>
+      
+        <li>Zhongcheng Blockchain Research Institute (Nanjing) Co. LTD</li>
+      </ul>
+    </section>
+    <section>
+        <h2>Invited Experts</h2>
+        <ul id="participations" data-query="participations.*[invited-expert=true]">
+          <li>Ben Francis</li>
+        
+          <li>Jan Miksovsky</li>
+        
+          <li>Johannes Wilm</li>
+        
+          <li>Tiger Oakes</li>
+        
+          <li>Tomasz Jakut</li>
+        </ul>
+      </section>
   </main>
-  <footer>
+  <footer class="group-data" data-query="group">
     <nav>
       <ul>
         <li>
@@ -507,4 +706,10 @@
       </ul>
     </nav>
   </footer>
-</body>
+
+
+  
+
+
+
+</body></html>
