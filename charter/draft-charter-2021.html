@@ -210,26 +210,27 @@
             "https://www.w3.org/Consortium/Process/#implementation-experience">at
             least two independent implementations</a> in wide use.
           </p>
+
+          <p>Each specification should contain separate sections detailing all known security and privacy implications for implementers, Web authors, and end users.</p>
+
+          <p>There should be testing plans for each specification, starting from the earliest drafts.</p>
+
           <p>
             Each specification must have an accompanying test suite, which is
             ideally developed in parallel to the specification. The test suite
             will be used to produce an implementation report before the
             specification transitions to <a href=
-            "https://www.w3.org/2018/Process-20180201/#rec-pr">Proposed
+            "https://www.w3.org/2020/Process-20200915/#rec-pr">Proposed
             Recommendation</a>.
           </p>
           <p>
-            New specification features for should be expected to be supported
+            New specification features should be supported
             by at least two implementations, which may be judged by factors
             including existing implementations, expressions of interest, and
             lack of opposition.
           </p>
           <p>
-            Where there are implications for implementors, developers, or
-            users, in the areas of accessibility, internationalization,
-            privacy, and security, each specification must have a section that
-            describes relevant benefits, limitations, and best practice
-            solutions for that particular area.
+            Where there are implications for user experience,  each specification should contain a section on accessibility that describes the benefits and impacts, including ways specification features can be used to address them, and recommendations for maximising accessibility in implementations..
           </p>
         </section>
       </section>
@@ -403,6 +404,28 @@
               </td>
             </tr>
           </table>
+          <p>
+            Depending on the <a href=
+            "https://www.w3.org/2020/Process-20200915/#Consensus">Consensus</a> of the Working Group members, the Group may bring the following WHATWG Review Drafts from W3C Candidate Recommendation to Proposed Recommendation:
+          </p>
+          <table>
+            <tr>
+              <th>
+                Specification
+              </th>
+              <th>
+                Description
+              </th>
+            </tr>
+            <tr>
+              <td>
+                <a href="https://heycam.github.io/webidl/">Web IDL</a>
+              </td>
+              <td>
+                This document defines an interface definition language, Web IDL, that can be used to describe interfaces that are intended to be implemented in web browsers. Web IDL is an IDL variant with a number of features that allow the behavior of common script objects in the web platform to be specified more readily. How interfaces described with Web IDL correspond to constructs within ECMAScript execution environments is also detailed in this document. It is expected that this document acts as a guide to implementors of already-published specifications, and that newly published specifications reference this document to ensure conforming implementations of interfaces are interoperable.
+              </td>
+            </tr>
+          </table>
         </section>
         <section id="wicgspecs">
           <h3>
@@ -548,15 +571,6 @@
           <dd>
             For architectural horizontal review, and to collaborate on
             architecture related topics.
-          </dd>
-          <dt>
-            <a href=
-            "https://www.w3.org/Consortium/activities#Web_Security_Interest_Group">
-            Web Security Interest Group</a>
-          </dt>
-          <dd>
-            For security horizontal review, and to collaborate on security
-            related topics.
           </dd>
         </dl>
         <p>
