@@ -28,8 +28,8 @@ If you have any admin related issues, please [file them](https://github.com/w3c/
 
 ## Chairs 🛋
 
- * 🦹‍♀️ Léonie Watson [✉️](mailto:lw@tetralogical.com)
- * 🦹‍♂️ Marcos Cáceres [✉️](mailto:marcos@marcosc.com)
+ * 🦹‍♀️ Léonie Watson [✉️](mailto:lw@tetralogical.com) - TetraLogical
+ * 🦹‍♂️ Marcos Cáceres [✉️](mailto:marcosc@.w3.org) - W3C
  
 ## W3C Team  
 
