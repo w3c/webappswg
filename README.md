@@ -14,7 +14,7 @@ If you have any admin related issues, please [file them](https://github.com/w3c/
  * [Pointer Lock](https://w3.org/TR/pointerlock) -[repository](https://github.com/w3c/pointerlock/)
  * [Push API](https://w3.org/TR//push-api) - [repository](https://github.com/w3c/push-api/)
  * [Screen Orientation API](http://github.com/w3c/screen-orientation) - [repository](https://github.com/w3c/screen-orientation/)
- * [UI Events](https://w3.org/TR/uievents) - [repository]([repository](https://github.com/w3c/uievents/))
+ * [UI Events](https://w3.org/TR/uievents) - [repository](https://github.com/w3c/uievents/)
  * [Web App Manifest](https://w3.org/TR/manifest) - [repository](https://github.com/w3c/manifest/)
  * [Web Share](https://w3.org/TR/web-share) - [repository](https://github.com/w3c/web-share/)
 
