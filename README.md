@@ -6,24 +6,26 @@ If you have any admin related issues, please [file them](https://github.com/w3c/
 
 ## Specifications
 
- * ♿️ [ARIA in HTML](https://github.com/w3c/html-aria/) - [Eds Draft](http://w3c.github.io/html-aria/).
- * 🦡 [Badging API](https://github.com/w3c/badging) - [Eds Draft](https://w3c.github.io/badging/).
- * 📄 [File API](https://github.com/w3c/fileAPI) - [Eds Draft](https://w3c.github.io/FileAPI/).
- * 🎮 [GamePad API](https://github.com/w3c/gamepad) - [Eds Draft](https://w3c.github.io/gamepad/).
- * 🖼 [Image Resource](https://www.w3.org/TR/image-resource/) - [Eds Draft](https://w3c.github.io/image-resouce/)
- * 👀 [Intersection Observer](https://github.com/w3c/IntersectionObserver) - [Eds Draft](https://w3c.github.io/IntersectionObserver/).
- * 🖱 [Pointer Lock 2.0](https://github.com/w3c/pointerlock/) - [Eds Draft](https://w3c.github.io/pointerlock/).
- * 📲 [Push API](https://github.com/w3c//push-api/) - [Eds Draft](https://w3c.github.io/push-api/).
- * 📱 [Screen Orientation API](http://github.com/w3c/screen-orientation) - [Eds Draft](https://w3c.github.io/screen-orientation/).
- * ⌨️ [UI Events](https://github.com/w3c/uievents/) - [Eds Draft](https://w3c.github.io/uievents/).
- * 👾 [Web App Manifest](https://github.com/w3c/manifest/) - [Eds Draft](https://www.w3.org/TR/appmanifest/).
- * 🎁 [Web Share](https://github.com/w3c/web-share/) - [Eds Draft](https://w3c.github.io/web-share/).
+ * [ARIA in HTML](https://w3.org/TR/html-aria) - [repository](https://github.com/w3c/html-aria/)
+ * [File API](https://w3.org/TR/fileAPI) - [repository](https://github.com/w3c/FileAPI/)
+ * [Gamepad API](https://w3.org/TR/gamepad) - [repository](https://github.com/w3c/gamepad/)
+ * [Image Resource](https://www.w3.org/TR/image-resource) - [repository](https://github.com/w3c/image-resource/)
+ * [Intersection Observer](https://w3.org/TR/IntersectionObserver) - [repository](https://github.com/w3c/IntersectionObserver/)
+ * [Pointer Lock](https://w3.org/TR/pointerlock) -[repository](https://github.com/w3c/pointerlock/)
+ * [Push API](https://w3.org/TR//push-api) - [repository](https://github.com/w3c/push-api/)
+ * [Screen Orientation API](http://github.com/w3c/screen-orientation) - [repository](https://github.com/w3c/screen-orientation/)
+ * [UI Events](https://w3.org/TR/uievents) - [repository]([repository](https://github.com/w3c/uievents/))
+ * [Web App Manifest](https://w3.org/TR/manifest) - [repository](https://github.com/w3c/manifest/)
+ * [Web Share](https://w3.org/TR/web-share) - [repository](https://github.com/w3c/web-share/)
 
-# Notes
+### Unpublished documents
+
+ * [Badging API](https://w3c.github.io/badging/) - [repository](https://github.com/w3c/badging)
+
+### Notes
 
  * [Web App Manifest - Application Information](https://github.com/w3c/manifest-app-info) - [Eds Draft](https://w3c.github.io/manifest-app-info/)
- 
- 
+
 ## Chairs 🛋
 
  * 🦹‍♀️ Léonie Watson [✉️](mailto:lw@tetralogical.com)
