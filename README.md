@@ -6,17 +6,17 @@ If you have any admin related issues, please [file them](https://github.com/w3c/
 
 ## Specifications
 
- * [ARIA in HTML](https://w3.org/TR/html-aria) - [repository](https://github.com/w3c/html-aria/)
- * [File API](https://w3.org/TR/fileAPI) - [repository](https://github.com/w3c/FileAPI/)
- * [Gamepad API](https://w3.org/TR/gamepad) - [repository](https://github.com/w3c/gamepad/)
+ * [ARIA in HTML](https://www.w3.org/TR/html-aria/) - [repository](https://github.com/w3c/html-aria/)
+ * [File API](https://www.w3.org/TR/FileAPI/) - [repository](https://github.com/w3c/FileAPI/)
+ * [Gamepad API](https://www.w3.org/TR/gamepad) - [repository](https://github.com/w3c/gamepad/)
  * [Image Resource](https://www.w3.org/TR/image-resource) - [repository](https://github.com/w3c/image-resource/)
- * [Intersection Observer](https://w3.org/TR/IntersectionObserver) - [repository](https://github.com/w3c/IntersectionObserver/)
- * [Pointer Lock](https://w3.org/TR/pointerlock) -[repository](https://github.com/w3c/pointerlock/)
- * [Push API](https://w3.org/TR//push-api) - [repository](https://github.com/w3c/push-api/)
- * [Screen Orientation API](http://github.com/w3c/screen-orientation) - [repository](https://github.com/w3c/screen-orientation/)
- * [UI Events](https://w3.org/TR/uievents) - [repository](https://github.com/w3c/uievents/)
- * [Web App Manifest](https://w3.org/TR/manifest) - [repository](https://github.com/w3c/manifest/)
- * [Web Share](https://w3.org/TR/web-share) - [repository](https://github.com/w3c/web-share/)
+ * [Intersection Observer](https://www.w3.org/TR/intersection-observer/) - [repository](https://github.com/w3c/IntersectionObserver/)
+ * [Pointer Lock](https://www.w3.org/TR/pointerlock) -[repository](https://github.com/w3c/pointerlock/)
+ * [Push API](https://www.w3.org/TR/TR/push-api) - [repository](https://github.com/w3c/push-api/)
+ * [Screen Orientation API](https://www.w3.org/TR/screen-orientation/) - [repository](https://github.com/w3c/screen-orientation/)
+ * [UI Events](https://www.w3.org/TR/uievents) - [repository](https://github.com/w3c/uievents/)
+ * [Web App Manifest](https://www.w3.org/TR/manifest) - [repository](https://github.com/w3c/manifest/)
+ * [Web Share](https://www.w3.org/TR/web-share) - [repository](https://github.com/w3c/web-share/)
 
 ### Unpublished documents
 
