@@ -18,6 +18,7 @@ If you have any admin related issues, please [file them](https://github.com/w3c/
  * [UI Events](https://www.w3.org/TR/uievents) - [repository](https://github.com/w3c/uievents/)
  * [Web App Manifest](https://www.w3.org/TR/manifest) - [repository](https://github.com/w3c/manifest/)
  * [Web Share](https://www.w3.org/TR/web-share) - [repository](https://github.com/w3c/web-share/)
+ * [Web Locks](https://w3c.github.io/web-locks/) - [repository](https://github.com/w3c/web-locks)
 
 ### Unpublished documents
 
@@ -30,7 +31,7 @@ If you have any admin related issues, please [file them](https://github.com/w3c/
 ## Chairs 🛋
 
  * 🦹‍♀️ Léonie Watson [✉️](mailto:lw@tetralogical.com) - TetraLogical
- * 🦹‍♂️ Marcos Cáceres [✉️](mailto:marcosc@.w3.org) - Apple Inc.
+ * 🦹‍♂️ Marcos Cáceres [✉️](mailto:marcosc@apple.com) - Apple Inc.
  
 ## W3C Team  
 
