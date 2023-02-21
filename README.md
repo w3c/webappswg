@@ -28,14 +28,11 @@ If you have any admin related issues, please [file them](https://github.com/w3c/
 
  * [Web App Manifest - Application Information](https://github.com/w3c/manifest-app-info) - [Eds Draft](https://w3c.github.io/manifest-app-info/)
 
-## Chairs 🛋
+## Chairs and W3C Team
 
  * 🦹‍♀️ Léonie Watson [✉️](mailto:lw@tetralogical.com) - TetraLogical
  * 🦹‍♂️ Marcos Cáceres [✉️](mailto:marcosc@apple.com) - Apple Inc.
- 
-## W3C Team  
-
- * 🦹‍♀️ Xiaoqian Wu [✉️](mailto:xiaoqian@w3.org)
+ * 🦹‍♀️ Xiaoqian Wu [✉️](mailto:xiaoqian@w3.org) - W3C
 
 ## Code of conduct violations
 
