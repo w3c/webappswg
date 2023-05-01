@@ -7,6 +7,7 @@ If you have any admin related issues, please [file them](https://github.com/w3c/
 ## Specifications
 
  * [ARIA in HTML](https://www.w3.org/TR/html-aria/) - [repository](https://github.com/w3c/html-aria/)
+ * [Badging API](https://w3c.github.io/badging/) - [repository](https://github.com/w3c/badging)
  * [File API](https://www.w3.org/TR/FileAPI/) - [repository](https://github.com/w3c/FileAPI/)
  * [Gamepad API](https://www.w3.org/TR/gamepad) - [repository](https://github.com/w3c/gamepad/)
  * [Image Resource](https://www.w3.org/TR/image-resource) - [repository](https://github.com/w3c/image-resource/)
@@ -17,12 +18,8 @@ If you have any admin related issues, please [file them](https://github.com/w3c/
  * [Screen Orientation API](https://www.w3.org/TR/screen-orientation/) - [repository](https://github.com/w3c/screen-orientation/)
  * [UI Events](https://www.w3.org/TR/uievents) - [repository](https://github.com/w3c/uievents/)
  * [Web App Manifest](https://www.w3.org/TR/manifest) - [repository](https://github.com/w3c/manifest/)
- * [Web Share](https://www.w3.org/TR/web-share) - [repository](https://github.com/w3c/web-share/)
  * [Web Locks](https://w3c.github.io/web-locks/) - [repository](https://github.com/w3c/web-locks)
-
-### Unpublished documents
-
- * [Badging API](https://w3c.github.io/badging/) - [repository](https://github.com/w3c/badging)
+ * [Web Share](https://www.w3.org/TR/web-share) - [repository](https://github.com/w3c/web-share/)
 
 ### Notes
 
