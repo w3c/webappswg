@@ -23,7 +23,7 @@ If you have any admin related issues, please [file them](https://github.com/w3c/
 ### Join Deliverables with Device and Sensors
 
 * [Contact Picker API](https://www.w3.org/TR/contact-picker/) - [repository](https://github.com/w3c/contact-picker/)
-* [Device Orientation Specification](https://www.w3.org/TR/orientation-event/) - [repository](https://github.com/w3c/deviceorientation)
+* [Device Orientation and Motion](https://www.w3.org/TR/orientation-event/) - [repository](https://github.com/w3c/deviceorientation)
 * [Geolocation API](https://www.w3.org/TR/geolocation/) - [repository](https://github.com/w3c/geolocation-api/)
 * [Screen Wake Lock API](https://www.w3.org/TR/screen-wake-lock/) - [repository](https://github.com/w3c/screen-wake-lock/)
 
