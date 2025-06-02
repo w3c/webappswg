@@ -8,7 +8,7 @@ If you have any admin related issues, please [file them](https://github.com/w3c/
 
  * [Badging API](https://w3c.github.io/badging/) - [repository](https://github.com/w3c/badging)
  * [File API](https://www.w3.org/TR/FileAPI/) - [repository](https://github.com/w3c/FileAPI/)
- * [Gamepad API](https://www.w3.org/TR/gamepad) - [repository](https://github.com/w3c/gamepad/)
+ * [Gamepad](https://www.w3.org/TR/gamepad) - [repository](https://github.com/w3c/gamepad/)
  * [Image Resource](https://www.w3.org/TR/image-resource) - [repository](https://github.com/w3c/image-resource/)
  * [IndexedDB](https://www.w3.org/TR/IndexedDB/) - [repository](https://github.com/w3c/IndexedDB/) 
  * [Intersection Observer](https://www.w3.org/TR/intersection-observer/) - [repository](https://github.com/w3c/IntersectionObserver/)
@@ -24,7 +24,7 @@ If you have any admin related issues, please [file them](https://github.com/w3c/
 
 * [Contact Picker API](https://www.w3.org/TR/contact-picker/) - [repository](https://github.com/w3c/contact-picker/)
 * [Device Orientation and Motion](https://www.w3.org/TR/orientation-event/) - [repository](https://github.com/w3c/deviceorientation)
-* [Geolocation API](https://www.w3.org/TR/geolocation/) - [repository](https://github.com/w3c/geolocation-api/)
+* [Geolocation](https://www.w3.org/TR/geolocation/) - [repository](https://github.com/w3c/geolocation-api/)
 * [Screen Wake Lock API](https://www.w3.org/TR/screen-wake-lock/) - [repository](https://github.com/w3c/screen-wake-lock/)
 
 ### Notes
