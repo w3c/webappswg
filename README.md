@@ -38,7 +38,7 @@ If you have any admin related issues, please [file them](https://github.com/w3c/
  * 🦹‍♂️ Diego González [✉️](mailto:luigonza@microsoft.com) - Microsoft
  * 🦹‍♂️ Marijn Kruisselbrink [✉️](mailto:mek@google.com) - Google
  * 🦹‍♀️ Xiaoqian Wu [✉️](mailto:xiaoqian@w3.org) - W3C
- * 🦹‍♂️ Michael[tm] Smiths [✉️](mailto:mike@w3.org) - W3C
+ * 🦹‍♂️ Michael[tm] Smith [✉️](mailto:mike@w3.org) - W3C
 
 ## Code of conduct violations
 
