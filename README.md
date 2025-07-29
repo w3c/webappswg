@@ -11,7 +11,7 @@ If you have any admin related issues, please [file them](https://github.com/w3c/
  * [Gamepad](https://www.w3.org/TR/gamepad) - [repository](https://github.com/w3c/gamepad/)
  * [Image Resource](https://www.w3.org/TR/image-resource) - [repository](https://github.com/w3c/image-resource/)
  * [IndexedDB](https://www.w3.org/TR/IndexedDB/) - [repository](https://github.com/w3c/IndexedDB/) 
- * [Intersection Observer](https://www.w3.org/TR/intersection-observer/) - [repository](https://github.com/w3c/IntersectionObserver/)
+ * [Service Workers](https://www.w3.org/TR/service-workers/) - [repository](https://github.com/w3c/ServiceWorker)
  * [Pointer Lock](https://www.w3.org/TR/pointerlock) - [repository](https://github.com/w3c/pointerlock/)
  * [Push API](https://www.w3.org/TR/push-api) - [repository](https://github.com/w3c/push-api/)
  * [Screen Orientation](https://www.w3.org/TR/screen-orientation/) - [repository](https://github.com/w3c/screen-orientation/)
