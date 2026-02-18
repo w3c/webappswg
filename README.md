@@ -42,6 +42,6 @@ If you have any admin related issues, please [file them](https://github.com/w3c/
 
 ## Code of conduct violations
 
-If you experience any behavior that you believe is in violation of of the W3C's code of conduct, please refer to the [ Code of Ethics and Professional Conduct](https://www.w3.org/Consortium/cepc/).
+If you experience any behavior that you believe is in violation of of the W3C's code of conduct, please refer to the [W3C Code of Conduct](https://www.w3.org/policies/code-of-conduct/).
 
 You can also reach out to the chairs or team privately - emails are above.
