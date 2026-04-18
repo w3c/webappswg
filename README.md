@@ -16,7 +16,7 @@ If you have any admin related issues, please [file them](https://github.com/w3c/
  * [Push API](https://www.w3.org/TR/push-api) - [repository](https://github.com/w3c/push-api/)
  * [Screen Orientation](https://www.w3.org/TR/screen-orientation/) - [repository](https://github.com/w3c/screen-orientation/)
  * [UI Events](https://www.w3.org/TR/uievents) - [repository](https://github.com/w3c/uievents/)
- * [Web App Manifest](https://www.w3.org/TR/manifest) - [repository](https://github.com/w3c/manifest/)
+ * [Web App Manifest](https://www.w3.org/TR/appmanifest) - [repository](https://github.com/w3c/manifest/)
  * [Web Locks](https://w3c.github.io/web-locks/) - [repository](https://github.com/w3c/web-locks)
  * [Web Share](https://www.w3.org/TR/web-share) - [repository](https://github.com/w3c/web-share/)
 
