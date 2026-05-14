@@ -17,6 +17,6 @@
   },
   "homepage": "https://github.com/w3c/WebAppsWG#readme",
   "dependencies": {
-    "serve": "^14.2.0"
+    "serve": "^14.2.6"
   }
 }
