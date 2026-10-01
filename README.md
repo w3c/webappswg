@@ -20,7 +20,7 @@ If you have any admin related issues, please [file them](https://github.com/w3c/
  * [Web Locks](https://w3c.github.io/web-locks/) - [repository](https://github.com/w3c/web-locks)
  * [Web Share](https://www.w3.org/TR/web-share) - [repository](https://github.com/w3c/web-share/)
 
-### Join Deliverables with Device and Sensors
+### Joint Deliverables with Device and Sensors
 
 * [Contact Picker API](https://www.w3.org/TR/contact-picker/) - [repository](https://github.com/w3c/contact-picker/)
 * [Device Orientation and Motion](https://www.w3.org/TR/orientation-event/) - [repository](https://github.com/w3c/deviceorientation)
