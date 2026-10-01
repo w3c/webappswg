@@ -35,7 +35,6 @@ If you have any admin related issues, please [file them](https://github.com/w3c/
 
  * 🦹‍♀️ Léonie Watson [✉️](mailto:lw@tetralogical.com) - TetraLogical
  * 🦹‍♂️ Marcos Cáceres [✉️](mailto:marcosc@apple.com) - Apple Inc.
- * 🦹‍♂️ Diego González [✉️](mailto:luigonza@microsoft.com) - Microsoft
  * 🦹‍♂️ Marijn Kruisselbrink [✉️](mailto:mek@google.com) - Google
  * 🦹‍♀️ Xiaoqian Wu [✉️](mailto:xiaoqian@w3.org) - W3C
  * 🦹‍♂️ Michael[tm] Smith [✉️](mailto:mike@w3.org) - W3C
