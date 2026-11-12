@@ -1,0 +1,1043 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Web Applications Working Group Charter</title>
+    <link rel="stylesheet" type="text/css" href="https://www.w3.org/2026/01/charter-style.css">
+  </head>
+  <body>
+    <header id="header">
+      <nav aria-label="Table of Contents">
+        <ul id="navbar">
+          <li><a href="#background">Background</a></li>
+          <li><a href="#scope">Scope</a></li>
+          <li><a href="#deliverables">Deliverables</a></li>
+          <li><a href="#success-criteria">Success Criteria</a></li>
+          <li><a href="#coordination">Coordination</a></li>
+          <li><a href="#participation">Participation</a></li>
+          <li><a href="#working-mode">Working mode</a></li>
+          <li><a href="#communication">Communication</a></li>
+          <li><a href="#decisions">Decision Policy</a></li>
+          <li><a href="#patentpolicy">Patent Policy</a></li>
+          <li><a href="#licensing">Licensing</a></li>
+          <li><a href="#about">About this Charter</a></li>
+        </ul>
+      </nav>
+      <p>
+        <a href="https://www.w3.org/"><img alt="W3C" height="120" src="https://www.w3.org/assets/logos/w3c-2025/svg/w3c.svg" width="120"></a>
+      </p>
+    </header>
+
+
+    <main>
+      <h1 id="title"><i class="todo">DRAFT</i> Web Applications Working Group Charter</h1>
+      <!-- replace DRAFT with PROPOSED when the AC review starts -->
+      <!-- delete PROPOSED after AC review completed -->
+
+      <p class="mission">The <strong>mission</strong> of the <a href="https://www.w3.org/groups/wg/webapps/">Web Applications Working Group</a> (WebApps WG) is to produce specifications that facilitate the development of client-side web applications.</p>
+      <!-- the link to the group is ALWAYS that available from https://www.w3.org/groups/wg or https://www.w3.org/groups/ig because each group page can then point to a different homepage, but not the other way around. -->
+
+      <div class="noprint">
+        <p class="join"><a href="https://www.w3.org/groups/wg/webapps/join/">Join the Web Applications Working Group.</a></p>
+      </div>
+
+      <!-- replace "draft charter" with "proposed charter" when the AC review starts -->
+      <!-- delete the whole paragraph after AC review completed -->
+      <p class="issue">This draft charter is available on <a href="https://github.com/w3c/webappswg/blob/main/charter/draft-charter-NEXT.html">GitHub</a>. Feel free to raise <a href="https://github.com/w3c/webappswg/issues">issues</a>.
+      </p>
+
+      <div id="details">
+        <table class="summary-table">
+          <tr id="Status">
+            <th>
+              Charter Status
+            </th>
+            <td>
+              See the <a href="https://www.w3.org/groups/wg/webapps/charters/">group status page</a> and <a href="#history">detailed change history</a>.
+            </td>
+          </tr>
+          <tr id="Duration">
+            <th>
+              Start date
+            </th>
+            <td>
+              <i class="todo">[dd monthname yyyy] (date of the "Call for Participation", when the charter is approved)</i>
+            </td>
+          </tr>
+          <tr id="CharterEnd">
+            <th>
+              End date
+            </th>
+            <td>
+              <i class="todo">[dd monthname yyyy]</i> (Start date + 2 years)
+            </td>
+          </tr>
+          <tr id="Chairs">
+            <th>
+              Chairs
+            </th>
+            <td>
+              Léonie Watson (TetraLogical), Marcos Cáceres (Apple), Marijn Kruisselbrink (Google)
+            </td>
+          </tr>
+          <tr id="TeamContacts">
+            <th>
+              Team Contacts
+            </th>
+            <td>
+              <a href="mailto:xiaoqian@w3.org">Xiaoqian Wu</a> (0.25 <abbr title="Full-Time Equivalent">FTE</abbr>), <a href="mailto:mike@w3.org">Michael[tm] Smith</a> (0.1 <abbr title="Full-Time Equivalent">FTE</abbr>)
+            </td>
+          </tr>
+          <tr id="MeetingSchedule">
+            <th>
+              Meeting Schedule
+            </th>
+            <td>
+              <strong>Teleconferences:</strong> topic-specific calls will be held when needed.
+              <br>
+              <strong>Face-to-face:</strong> we will meet during the W3C's annual Technical Plenary week; additional face-to-face meetings may be scheduled by consent of the participants, usually no more than 3 per year.
+              <br>
+              See also this <a href="https://www.w3.org/groups/wg/webapps/calendar/">group calendar</a>
+            </td>
+          </tr>
+        </table>
+
+      </div>
+
+      <div id="background" class="background">
+        <h2>Motivation and Background</h2>
+        <p>
+          Specifications produced by the WebApps Working Group enable
+          developers to create web applications that work across a wide range
+          of platforms and devices, and for a broad diversity of users, by
+          addressing matters of accessibility, device independence,
+          internationalization, privacy, and security.
+        </p>
+      </div>
+
+      <section id="scope" class="scope">
+        <h2>Scope</h2>
+        <p>
+          The scope of the WebApps Working Group is:
+        </p>
+        <ul>
+          <li>Haptic input devices and their emitted events and/or data.</li>
+          <li>Data sharing across remote and local web applications.</li>
+          <li>Receiving and acting upon data from remote sources.</li>
+          <li>Accessing the file system and persistent storage.</li>
+          <li>Interfacing with OS capabilities.</li>
+          <li>Integrating web applications with the OS.</li>
+          <li>Preventing the screen from turning off under certain conditions.</li>
+          <li>Providing location information, either of the hosting device or a location selected by the user.</li>
+          <li>Providing information about changes in motion and orientation of the hosting device.</li>
+        </ul>
+        <p>The Working Group will not adopt new proposals until they have matured through the <a href="https://wicg.io/">Web Platform Incubator Community Group</a> or a similar incubation phase.
+          If the Working Group decides to add new Recommendation-track deliverables
+          then it will recharter with changes to change its deliverables.</p>
+
+        <section id="section-out-of-scope">
+          <h3 id="out-of-scope">Out of Scope</h3>
+          <p>The following features are out of scope, and will not be addressed by this Working Group.</p>
+
+          <ul class="out-of-scope">
+            <li class="todo">[to be filled in by the group]</li>
+          </ul>
+        </section>
+
+      </section>
+
+      <section id="deliverables">
+        <h2>
+          Deliverables
+        </h2>
+
+        <p>Updated document status is available on the <a href="https://www.w3.org/groups/wg/webapps/publications/">group publication status page</a>.</p>
+
+        <p id="draft-state"><i>Draft state</i> indicates the state of the deliverable at the time of the charter approval. <i>Expected completion</i> indicates when the deliverable is projected to become a Recommendation, or otherwise reach a stable state.</p>
+          <!--
+            Deliverables lists are more easily generated from the information available at https://www.w3.org/groups/wg/webapps/deliverables/ (member-only).
+          -->
+
+        <section id="normative">
+          <h3>
+            Normative Specifications
+          </h3>
+          <p>
+            The Working Group will deliver the following W3C normative specifications:
+          </p>
+        <dl>
+          <dt id="11002" class="spec current"><a href="https://www.w3.org/TR/web-locks/">Web Locks API</a></dt>
+            <dd>
+              <p>This document defines a web platform API that allows script to asynchronously acquire a lock over a resource, hold it while work is performed, then release it. While held, no other script in the origin can acquire a lock over the same resource. This allows contexts (windows, workers) within a web application to coordinate the usage of resources.</p>
+
+              <p class="draft-status"><b>Draft state:</b> <a href="https://www.w3.org/TR/web-locks/">Working Draft</a></p>
+
+              <p class="milestone"><b>Expected completion:</b> CR - Q3 2026; REC - Q2 2027</p>
+
+            <p><b>Adopted Draft:</b> Web Locks API, <a href="https://www.w3.org/TR/2025/WD-web-locks-20250924/">https://www.w3.org/TR/2025/WD-web-locks-20250924/</a>, 24 September 2025</p>
+
+            <p><b>Exclusion Draft:</b>
+                <a href='https://www.w3.org/TR/2023/WD-web-locks-20230105/'>https://www.w3.org/TR/2023/WD-web-locks-20230105/</a><br>
+                <a href='https://www.w3.org/mid/cfe-11002-256920025c3845149fdfcf7aa229067921212122@w3.org'>Exclusion period</a>
+                                began on 2023-01-05 and
+                                ended on 2023-06-04.
+                </p>
+                <p><b>Exclusion Draft Charter</b>: Produced under Working Group Charter:
+                    <a href='https://www.w3.org/2022/04/webapps-wg-charter.html'>https://www.w3.org/2022/04/webapps-wg-charter.html</a></p>
+                </dd>
+
+            <dt id="11343" class="spec current"><a href="https://www.w3.org/TR/contact-picker/">Contact Picker API</a></dt>
+            <dd>
+              <p>An API to give one-off access to a user’s contact information with full control over the shared data. It's a joint deliverable with the <a href="https://www.w3.org/groups/wg/das/">Devices and Sensors Working Group</a>.</p>
+
+              <p class="draft-status"><b>Draft state:</b> <a href="https://www.w3.org/TR/contact-picker/">Working Draft</a></p>
+
+              <p class="milestone"><b>Expected completion:</b> CR - Q4 2026</p>
+
+            <p><b>Adopted Draft:</b> Contact Picker API, <a href="https://www.w3.org/TR/2024/WD-contact-picker-20240708/">https://www.w3.org/TR/2024/WD-contact-picker-20240708/</a>, 08 July 2024</p>
+
+            <p><b>Exclusion Draft:</b>
+                <a href='https://www.w3.org/TR/2022/WD-contact-picker-1-20221220/'>https://www.w3.org/TR/2022/WD-contact-picker-1-20221220/</a><br>
+                <a href='https://www.w3.org/mid/cfe-10967-4d942ed10f0be0cdaf52ca96068d4d43697c0943@w3.org'>Exclusion period</a>
+                                began on 2022-12-20 and
+                                ended on 2023-05-19.
+                </p>
+                <p><b>Exclusion Draft Charter</b>: Produced under Working Group Charter:
+                  <a href='https://www.w3.org/2022/04/webapps-wg-charter.html'>https://www.w3.org/2022/04/webapps-wg-charter.html</a></p>
+              </dd>
+
+            <dt id="11634" class="spec current"><a href="https://www.w3.org/TR/badging/">Badging API</a></dt>
+            <dd>
+              <p>
+                This specification defines an API that allows installed web applications to set an application badge, which is usually shown alongside the application's icon on the device's home screen or application dock.
+              </p>
+
+              <p class="draft-status"><b>Draft state:</b> <a href="https://www.w3.org/TR/badging/">Working Draft</a></p>
+
+              <p class="milestone"><b>Expected completion:</b> CR - Q3 2026; REC - Q2 2027</p>
+
+            <p><b>Adopted Draft:</b> Badging API, <a href="https://www.w3.org/TR/2025/WD-badging-20251006/">https://www.w3.org/TR/2025/WD-badging-20251006/</a>, 06 October 2025</p>
+
+            <p><b>Exclusion Draft:</b>
+              <a href='https://www.w3.org/TR/2023/WD-badging-20230406/'>https://www.w3.org/TR/2023/WD-badging-20230406/</a><br>
+              <a href='https://www.w3.org/mid/cfe-11504-d231aa9d2d5b4c20d73f9a30b21d9069559ce778@w3.org'>Exclusion period</a>
+                                began on 2023-04-06 and
+                                ended on 2023-09-03.
+              </p>
+              <p><b>Exclusion Draft Charter</b>: Produced under Working Group Charter:
+                <a href='https://www.w3.org/2022/04/webapps-wg-charter.html'>https://www.w3.org/2022/04/webapps-wg-charter.html</a></p>
+            </dd>
+
+          <dt id="8159" class="spec current"><a href="https://www.w3.org/TR/FileAPI/">File API</a></dt>
+            <dd>
+              <p>This specification provides an API for representing file objects in web applications, as well as programmatically selecting them and accessing their data.</p>
+
+              <p class="draft-status"><b>Draft state:</b> <a href="https://www.w3.org/TR/FileAPI/">Working Draft</a></p>
+
+              <p class="milestone"><b>Expected completion:</b> CR - Q3 2026; REC - Q2 2027</p>
+
+            <p><b>Adopted Draft:</b> File API, <a href="https://www.w3.org/TR/2025/WD-FileAPI-20251203/">https://www.w3.org/TR/2025/WD-FileAPI-20251203/</a>, 03 December 2025</p>
+
+            <p><b>Exclusion Draft:</b>
+              <a href='https://www.w3.org/TR/2013/WD-FileAPI-20130912/'>https://www.w3.org/TR/2013/WD-FileAPI-20130912/</a><br>
+              <a href='https://lists.w3.org/Archives/Member/member-cfe/2013Sep/0004.html'>Exclusion period</a>
+                                began on 2013-09-13 and
+                                ended on 2013-11-12.
+            </p>
+            <p><b>Exclusion Draft Charter</b>: Produced under Working Group Charter:
+              <a href="https://www.w3.org/2012/webapps/charter/">http://www.w3.org/2012/webapps/charter/</a></p>
+            </dd>
+
+            <dt id="8392" class="spec current"><a href="https://www.w3.org/TR/gamepad/">Gamepad</a></dt>
+            <dd>
+              <p>Defines a low-level interface that represents gamepad devices.</p>
+
+              <p class="draft-status"><b>Draft state:</b> <a href="https://www.w3.org/TR/gamepad/">Working Draft</a></p>
+
+              <p class="milestone"><b>Expected completion:</b> CR - Q3 2026; REC - Q2 2027</p>
+
+            <p><b>Adopted Draft:</b> Gamepad, <a href="https://www.w3.org/TR/2025/WD-gamepad-20250710/">https://www.w3.org/TR/2025/WD-gamepad-20250710/</a>, 10 July 2025</p>
+
+            <p><b>Exclusion Draft:</b>
+              <a href='https://www.w3.org/TR/2012/WD-gamepad-20120529/'>https://www.w3.org/TR/2012/WD-gamepad-20120529/</a><br>
+              <a href='https://lists.w3.org/Archives/Member/member-cfe/2012May/0010.html'>Exclusion period</a>
+                                began on 2012-05-29 and
+                                ended on 2012-10-26.
+            </p>
+           <p><b>Exclusion Draft Charter</b>: Produced under Working Group Charter:
+              <a href="https://www.w3.org/2010/webapps/charter/">http://www.w3.org/2010/webapps/charter/</a>,                                                                     <a href="https://www.w3.org/2012/webapps/charter/">http://www.w3.org/2012/webapps/charter/</a>                                                            </p>
+            </dd>
+
+            <dt id="8149" class="spec current"><a href="https://www.w3.org/TR/image-resource/">Image Resource</a></dt>
+            <dd>
+              <p>This document defines the concept of an "image resource" and a corresponding WebIDL ImageResource dictionary. Web APIs can use the ImageResource dictionary to represent an image resource in contexts where an HTMLImageElement is not suitable or available (e.g., in a Worker).</p>
+
+              <p class="draft-status"><b>Draft state:</b> <a href="https://www.w3.org/TR/image-resource/">Working Draft</a></p>
+
+              <p class="milestone"><b>Expected completion:</b> CR - Q3 2026; REC - Q2 2027</p>
+
+            <p><b>Adopted Draft:</b> Image Resource, <a href="https://www.w3.org/TR/2021/WD-image-resource-20210604/">https://www.w3.org/TR/2021/WD-image-resource-20210604/</a>, 04 June 2021</p>
+
+            <p><b>Exclusion Draft:</b>
+              <a href='https://www.w3.org/TR/2020/WD-image-resource-20200507/'>https://www.w3.org/TR/2020/WD-image-resource-20200507/</a><br>
+              <a href='https://www.w3.org/mid/cfe-7409-170d0e2c2de2e6d8f0c2079a5f1fa86ba2dca6af@w3.org'>Exclusion period</a>
+                                began on 2020-05-07 and
+                                ended on 2020-10-04.
+              </p>
+              <p><b>Exclusion Draft Charter</b>: Produced under Working Group Charter:
+                <a href='https://www.w3.org/2019/05/webapps-charter.html'>https://www.w3.org/2019/05/webapps-charter.html</a></p>
+              </dd>
+
+            <dt id="8229" class="spec current"><a href="https://www.w3.org/TR/IndexedDB-3/">Indexed Database API 3.0</a></dt>
+            <dd>
+              <p>This document defines APIs for a database of records holding simple values and hierarchical objects. Each record consists of a key and some value. Moreover, the database maintains indexes over records it stores. An application developer directly uses an API to locate records either by their key or by using an index. A query language can be layered on this API. An indexed database can be implemented using a persistent B-tree data structure.</p>
+
+              <p class="draft-status"><b>Draft state:</b> <a href="https://www.w3.org/TR/IndexedDB-3/">Working Draft</a></p>
+
+              <p class="milestone"><b>Expected completion:</b> CR - Q3 2026; REC - Q2 2027</p>
+
+            <p><b>Adopted Draft:</b> Indexed Database API 3.0, <a href="https://www.w3.org/TR/2025/WD-IndexedDB-3-20250813/">https://www.w3.org/TR/2025/WD-IndexedDB-3-20250813/</a>, 13 August 2025</p>
+
+            <p><b>Exclusion Draft:</b>
+              <a href='https://www.w3.org/TR/2021/WD-IndexedDB-3-20210311/'>https://www.w3.org/TR/2021/WD-IndexedDB-3-20210311/</a><br>
+              <a href='https://www.w3.org/mid/cfe-7909-7b90ce429e87b2fd6fcdb430843a65a930ef9911@w3.org'>Exclusion period</a>
+                                began on 2021-03-11 and
+                                ended on 2021-08-08.
+            </p>
+            <p><b>Exclusion Draft Charter</b>: Produced under Working Group Charter:
+              <a href='https://www.w3.org/2020/12/webapps-wg-charter.html'>https://www.w3.org/2020/12/webapps-wg-charter.html</a></p>
+            </dd>
+
+            <dt id="service-workers" class="spec current"><a href="https://www.w3.org/TR/service-workers/">Service Workers Nightly</a></dt>
+            <dd>
+              <p>The core of this specification is a worker that wakes to receive events. This provides an event destination that can be used when other destinations would be inappropriate, or no other destination exists.</p>
+
+              <p class="draft-status"><b>Draft state:</b> <a href="https://www.w3.org/TR/service-workers/">Candidate Recommendation Draft</a></p>
+
+              <p class="milestone"><b>Expected completion:</b> A Living Document</p>
+
+            <p><b>Adopted Draft:</b> Service Workers, <a href="https://www.w3.org/TR/2025/CRD-service-workers-20251212/">https://www.w3.org/TR/2025/CRD-service-workers-20251212/</a>, 12 December 2025</p>
+
+            <p><b>Exclusion Draft:</b>
+              <a href='https://www.w3.org/TR/2019/CR-service-workers-1-20191119/'>https://www.w3.org/TR/2019/CR-service-workers-1-20191119/</a><br>
+              <a href='https://www.w3.org/mid/cfe-7243-7fe801410c94d35dca338fbba900642eb6811bf8@w3.org'>Exclusion period</a>
+                                began on 2019-11-19 and
+                                ended on 2020-01-18.
+              </p>
+              <p><b>Exclusion Draft Charter</b>: Produced under Working Group Charter:
+                <a href='https://www.w3.org/2017/08/sw-charter.html'>https://www.w3.org/2017/08/sw-charter.html</a></p>
+            </dd>
+
+            <dt id="7132" class="spec current"><a href="https://www.w3.org/TR/pointerlock-2/">Pointer Lock 2.0</a></dt>
+            <dd>
+              <p>This specification defines an API that provides scripted access to raw mouse movement data while locking the target of mouse events to a single element and removing the cursor from view. This is an essential input mode for certain classes of applications, especially first person perspective 3D applications and 3D modeling software.</p>
+
+              <p class="draft-status"><b>Draft state:</b> <a href="https://www.w3.org/TR/pointerlock-2/">Working Draft</a></p>
+
+              <p class="milestone"><b>Expected completion:</b> CR - Q3 2026; REC - Q1 2027</p>
+
+            <p><b>Adopted Draft:</b> Pointer Lock 2.0, <a href="https://www.w3.org/TR/2025/WD-pointerlock-2-20250929/">https://www.w3.org/TR/2025/WD-pointerlock-2-20250929/</a>, 29 September 2025</p>
+
+            <p><b>Exclusion Draft:</b>
+              <a href='https://www.w3.org/TR/2016/WD-pointerlock-2-20161122/'>https://www.w3.org/TR/2016/WD-pointerlock-2-20161122/</a><br>
+              <a href='https://lists.w3.org/Archives/Member/member-cfe/2016Nov/0010.html'>Exclusion period</a>
+                                began on 2016-11-22 and
+                                ended on 2017-04-21.
+            </p>
+            <p><b>Exclusion Draft Charter</b>: Produced under Working Group Charter:
+                                                                    <a href="https://www.w3.org/2016/11/webplatform-charter.html">http://www.w3.org/2016/11/webplatform-charter.html</a></p>
+            </dd>
+
+            <dt id="8212" class="spec current"><a href="https://www.w3.org/TR/push-api/">Push API</a></dt>
+            <dd>
+              <p>An API that provides Web applications with scripted access to server-sent application data.</p>
+
+              <p class="draft-status"><b>Draft state:</b> <a href="https://www.w3.org/TR/push-api/">Working Draft</a></p>
+
+              <p class="milestone"><b>Expected completion:</b> CR - Q3 2026; REC - Q4 2027</p>
+
+            <p><b>Adopted Draft:</b> Push API, <a href="https://www.w3.org/TR/2025/WD-push-api-20251201/">https://www.w3.org/TR/2025/WD-push-api-20251201/</a>, 01 December 2025</p>
+
+            <p><b>Exclusion Draft:</b>
+              <a href='https://www.w3.org/TR/2012/WD-push-api-20121018/'>https://www.w3.org/TR/2012/WD-push-api-20121018/</a><br>
+              <a href='https://lists.w3.org/Archives/Member/member-webapps/2012OctDec/0007.html'>Exclusion period</a>
+                                began on 2012-10-18 and
+                                ended on 2013-03-17.
+            </p>
+            <p><b>Exclusion Draft Charter</b>: Produced under Working Group Charter:
+                                                                    <a href="https://www.w3.org/2012/webapps/charter/">http://www.w3.org/2012/webapps/charter/</a></p>
+            </dd>
+
+            <dt id="8221" class="spec current"><a href="https://www.w3.org/TR/screen-orientation/">Screen Orientation</a></dt>
+            <dd>
+              <p>Defines APIs to read screen orientation state and to lock the screen orientation to a specific state.
+            </p>
+
+              <p class="draft-status"><b>Draft state:</b> <a href="https://www.w3.org/TR/screen-orientation/">Working Draft</a></p>
+
+              <p class="milestone"><b>Expected completion:</b> REC - Q4 2026</p>
+
+            <p><b>Adopted Draft:</b> Screen Orientation, <a href="https://www.w3.org/TR/2025/WD-screen-orientation-20251021/">https://www.w3.org/TR/2025/WD-screen-orientation-20251021/</a>, 21 October 2025</p>
+
+            <p><b>Exclusion Draft:</b>
+              <a href='https://www.w3.org/TR/2012/WD-screen-orientation-20120522/'>https://www.w3.org/TR/2012/WD-screen-orientation-20120522/</a><br>
+              <a href='https://lists.w3.org/Archives/Member/member-webapps/2012AprJun/0003.html'>Exclusion period</a>
+                                began on 2012-05-22 and
+                                ended on 2012-10-19.
+            </p>
+            <p><b>Exclusion Draft Charter</b>: Produced under Working Group Charter:
+                <a href="https://www.w3.org/2010/webapps/charter/">http://www.w3.org/2010/webapps/charter/</a>,                                                                     <a href="https://www.w3.org/2012/webapps/charter/">http://www.w3.org/2012/webapps/charter/</a></p>
+            </dd>
+
+            <dt id="8277" class="spec current"><a href="https://www.w3.org/TR/appmanifest/">Web Application Manifest</a></dt>
+            <dd>
+              <p>This specification defines a manifest, which provides developers with a centralized place to put metadata about a web application.</p>
+
+              <p class="draft-status"><b>Draft state:</b> <a href="https://www.w3.org/TR/appmanifest/">Working Draft</a></p>
+
+              <p class="milestone"><b>Expected completion:</b> CR - Q3 2026; REC - Q2 2027</p>
+
+            <p><b>Adopted Draft:</b> Web Application Manifest, <a href="https://www.w3.org/TR/2026/WD-appmanifest-20260105/">https://www.w3.org/TR/2026/WD-appmanifest-20260105/</a>, 05 January 2026</p>
+
+            <p><b>Exclusion Draft:</b>
+              <a href='https://www.w3.org/TR/2013/WD-appmanifest-20131217/'>https://www.w3.org/TR/2013/WD-appmanifest-20131217/</a><br>
+              <a href='https://lists.w3.org/Archives/Member/member-cfe/2013Dec/0004.html'>Exclusion period</a>
+                                began on 2013-12-17 and
+                                ended on 2014-05-16.
+            </p>
+            <p><b>Exclusion Draft Charter</b>: Produced under Working Group Charter:
+              <a href="https://www.w3.org/2012/webapps/charter/">http://www.w3.org/2012/webapps/charter/</a></p>
+            </dd>
+
+            <dt id="7023" class="spec current"><a href="https://www.w3.org/TR/uievents/">UI Events</a></dt>
+            <dd>
+              <p>This specification defines the Document Object Model Events Level 3, a generic platform- and language-neutral event system which allows registration of event handlers, describes event flow through a tree structure, and provides basic contextual information for each event. The Document Object Model Events Level 3 builds on the Document Object Model Events Level 2 [DOM2 Events].</p>
+
+              <p class="draft-status"><b>Draft state:</b> <a href="https://www.w3.org/TR/uievents/">Working Draft</a></p>
+
+              <p class="milestone"><b>Expected completion:</b> CR - Q4 2026</p>
+
+            <p><b>Adopted Draft:</b> UI Events, <a href="https://www.w3.org/TR/2024/WD-uievents-20240907/">https://www.w3.org/TR/2024/WD-uievents-20240907/</a>, 07 September 2024</p>
+
+            <p><b>Exclusion Draft:</b>
+              <a href='https://www.w3.org/TR/2012/WD-DOM-Level-3-Events-20120906/'>https://www.w3.org/TR/2012/WD-DOM-Level-3-Events-20120906/</a><br>
+              <a href='https://lists.w3.org/Archives/Member/member-webapps/2012JulSep/0009.html'>Exclusion period</a>
+                                began on 2012-09-06 and
+                                ended on 2012-11-05.
+            </p>
+            <p><b>Exclusion Draft Charter</b>: Produced under Working Group Charter:
+                                                                    <a href="https://www.w3.org/2012/webapps/charter/">http://www.w3.org/2012/webapps/charter/</a></p>
+            </dd>
+
+          <dt id="1180" class="spec current"><a href="https://www.w3.org/TR/uievents-code/">UI Events KeyboardEvent code Values</a></dt>
+            <dd>
+              <p>This specification defines the values for the KeyboardEvent.code attribute, which is defined as part of the UI Events Specification. The code value contains information about the key event that can be used to identify the physical key being pressed by the user.</p>
+
+              <p class="draft-status"><b>Draft state:</b> <a href="https://www.w3.org/TR/uievents-code/">W3C Recommendation</a></p>
+
+            <p><b>Adopted Draft:</b> UI Events KeyboardEvent code Values, <a href="https://www.w3.org/TR/2025/REC-uievents-code-20250422/">https://www.w3.org/TR/2025/REC-uievents-code-20250422/</a>, 22 April 2025</p>
+
+            <p><b>Exclusion Draft:</b> UI Events KeyboardEvent code Values,  <a href="https://www.w3.org/TR/2023/CR-uievents-code-20230530/">https://www.w3.org/TR/2023/CR-uievents-code-20230530/</a>, 30 May 2023, <a href="https://lists.w3.org/Archives/Public/public-webapps/2023AprJun/0025.html">Exclusion Draft</a> began on 30 May 2023; will end on 29 July 2023.</p>
+
+            <p><b>Exclusion Draft Charter:</b> <a href="https://www.w3.org/2022/04/webapps-wg-charter.html">https://www.w3.org/2022/04/webapps-wg-charter.html</a> </p></dd>
+
+            <dt id="1181" class="spec current"><a href="https://www.w3.org/TR/uievents-key/">UI Events KeyboardEvent key Values</a></dt>
+            <dd>
+              <p>This specification defines the key attribute values that must be used for KeyboardEvent's key attribute, which is defined as part of the UI Events Specification.</p>
+
+              <p class="draft-status"><b>Draft state:</b> <a href="https://www.w3.org/TR/uievents-key/">W3C Recommendation</a></p>
+
+            <p><b>Adopted Draft:</b> UI Events KeyboardEvent key Values, <a href="https://www.w3.org/TR/2025/REC-uievents-key-20250422/">https://www.w3.org/TR/2025/REC-uievents-key-20250422/</a>, 22 April 2025</p>
+
+            <p><b>Exclusion Draft:</b> UI Events KeyboardEvent key Values,  <a href="https://www.w3.org/TR/2023/CR-uievents-key-20230530/">https://www.w3.org/TR/2023/CR-uievents-key-20230530/</a>, 30 May 2023, <a href="https://lists.w3.org/Archives/Public/public-webapps/2023AprJun/0026.html">Exclusion Draft</a> began on 30 May 2023; will end on 29 July 2023.</p>
+
+            <p><b>Exclusion Draft Charter:</b> <a href="https://www.w3.org/2022/04/webapps-wg-charter.html">https://www.w3.org/2022/04/webapps-wg-charter.html</a> </p></dd>
+
+
+          <dt id="8403" class="spec current"><a href="https://www.w3.org/TR/web-share/">Web Share API</a></dt>
+            <dd>
+              <p>This specification defines an API for sharing text, links and other content to an arbitrary destination of the user's choice.</p>
+              <p>The available share targets are not specified here; they are provided by the user agent. They could, for example, be apps, websites or contacts.</p>
+
+              <p class="draft-status"><b>Draft state:</b> <a href="https://www.w3.org/TR/web-share/">W3C Recommendation</a></p>
+
+            <p><b>Adopted Draft:</b> Web Share API, <a href="https://www.w3.org/TR/2023/REC-web-share-20230530/">https://www.w3.org/TR/2023/REC-web-share-20230530/</a>, 30 May 2023</p>
+
+            <p><b>Exclusion Draft:</b> Web Share API, <a href="https://www.w3.org/TR/2022/CR-web-share-20220830/">https://www.w3.org/TR/2022/CR-web-share-20220830/</a>, 30 August 2022, <a href="https://lists.w3.org/Archives/Public/public-webapps/2022JulSep/0022.html">Exclusion Draft</a> began on 30 Aug 2022; ended on 29 October 2022.</p>
+
+            <p><b>Exclusion Draft Charter:</b> <a href="https://www.w3.org/2022/04/webapps-wg-charter.html">https://www.w3.org/2022/04/webapps-wg-charter.html</a> </p></dd>
+
+            <dt id="11508" class="spec current"><a href="https://www.w3.org/TR/screen-wake-lock/">Screen Wake Lock API</a></dt>
+            <dd>
+              <p>This document specifies an API that allows web applications to request a screen wake lock. Under the right conditions, and if allowed, the screen wake lock prevents the system from turning off a device's screen. It's a joint deliverable with the <a href="https://www.w3.org/groups/wg/das/">Devices and Sensors Working Group</a>.</p>
+
+              <p class="draft-status"><b>Draft state:</b> <a href="https://www.w3.org/TR/screen-wake-lock/">Working Draft</a></p>
+
+              <p class="milestone"><b>Expected completion:</b> CR - Q4 2026</p>
+
+            <p><b>Adopted Draft:</b> Screen Wake Lock API, <a href="https://www.w3.org/TR/2024/WD-screen-wake-lock-20241024/">https://www.w3.org/TR/2024/WD-screen-wake-lock-20241024/</a>, 24 October 2024</p>
+
+            <p><b>Exclusion Draft:</b>
+              <a href='https://www.w3.org/TR/2017/CR-wake-lock-20171214/'>https://www.w3.org/TR/2017/CR-wake-lock-20171214/</a><br>
+              <a href='https://lists.w3.org/Archives/Member/member-cfe/2017Dec/0008.html'>Exclusion period</a>
+                                began on 2017-12-14 and
+                                ended on 2018-02-12.
+                            </p>
+              <p><b>Exclusion Draft Charter</b>: Produced under Working Group Charter:
+                <a href='https://www.w3.org/2016/03/device-sensors-wg-charter.html'>https://www.w3.org/2016/03/device-sensors-wg-charter.html</a></p>
+              </dd>
+
+            <dt id="11583" class="spec current"><a href="https://www.w3.org/TR/orientation-event/">Device Orientation and Motion</a></dt>
+            <dd>
+              <p>This specification defines several new DOM event types that provide information about the physical orientation and motion of a hosting device. It's a joint deliverable with the <a href="https://www.w3.org/groups/wg/das/">Devices and Sensors Working Group</a>.</p>
+
+              <p class="draft-status"><b>Draft state:</b> <a href="https://www.w3.org/TR/orientation-event/">Candidate Recommendation Draft</a></p>
+
+              <p class="milestone"><b>Expected completion:</b> CR - Q4 2026</p>
+
+            <p><b>Adopted Draft:</b> Device Orientation and Motion, <a href="https://www.w3.org/TR/2025/CRD-orientation-event-20250212/">https://www.w3.org/TR/2025/CRD-orientation-event-20250212/</a>, 12 February 2025</p>
+
+            <p><b>Exclusion Draft:</b>
+              <a href='https://www.w3.org/TR/2024/CR-orientation-event-20241121/'>https://www.w3.org/TR/2024/CR-orientation-event-20241121/</a><br>
+              <a href='https://www.w3.org/mid/cfe-14759-cde267815424afecf19a2b3ebcb768d7c4114106@w3.org'>Exclusion period</a>
+                                began on 2024-11-21 and
+                                ended on 2025-01-20.
+            </p>
+            <p><b>Exclusion Draft Charter</b>: Produced under Working Group Charter:
+                                                                    <a href='https://www.w3.org/2024/01/webappswg-charter-2024.html'>https://www.w3.org/2024/01/webappswg-charter-2024.html</a> </p>
+            </dd>
+
+            <dt id="10342" class="spec current"><a href="https://www.w3.org/TR/geolocation/">Geolocation</a></dt>
+            <dd>
+              <p>The Geolocation API provides access to geographical location information associated with the hosting device. It's a joint deliverable with the <a href="https://www.w3.org/groups/wg/das/">Devices and Sensors Working Group</a>.</p>
+
+              <p class="draft-status"><b>Draft state:</b> <a href="https://www.w3.org/TR/geolocation/">W3C Recommendation</a></p>
+
+              <p class="milestone"><b>Expected completion:</b> CR - Q1 2026; REC - Q4 2027</p>
+
+              <p><b>Adopted Draft:</b> Geolocation API, <a href="https://www.w3.org/TR/2025/REC-geolocation-20251029/">https://www.w3.org/TR/2025/REC-geolocation-20251029/</a>, 29 October 2025</p>
+
+            <p><b>Exclusion Draft:</b> Geolocation API, <a href="https://www.w3.org/TR/2022/CR-geolocation-20220217/">https://www.w3.org/TR/2022/CR-geolocation-20220217/</a>, 17 February 2022, <a href="https://lists.w3.org/Archives/Member/member-cfe/2022Feb/0005.html">Exclusion Draft</a> began on 17 Feb 2022; ended on 18 April 2022.</p>
+
+            <p><b>Exclusion Draft Charter:</b> <a href="https://www.w3.org/2020/11/das-wg-charter.html">https://www.w3.org/2020/11/das-wg-charter.html</a> </p>
+            </dd>
+            </dl>
+        </section>
+
+        <section id="incubation">
+          <h3>
+            WICG specifications
+          </h3>
+          <p>
+            Depending on the <a href="https://www.w3.org/community/wicg/">WICG</a> progress, including
+            interest from multiple implementers, the Group may also produce
+            W3C Recommendation-track documents for the following documents:
+          </p>
+          <dl>
+            <dt id="wicg-background-fetch" class="spec"><a href="https://wicg.github.io/background-fetch/">Background Fetch</a></dt>
+            <dd>
+              <p>An API to handle large uploads/downloads in the background with user visibility.</p>
+              <p class="draft-status"><b>Draft state:</b>
+                Proposal in <a href="https://www.w3.org/community/wicg/">Web Platform Incubator Community Group</a></p>
+            </dd>
+            <dt id="wicg-entries-api" class="spec"><a href="https://wicg.github.io/entries-api/">File and Directory Entries API</a></dt>
+            <dd>
+              <p>This specification documents web browser support for file and
+                directory upload by drag-and-drop operations. It introduces types
+                representing directories with methods for asynchronous traversal,
+                and extends HTMLInputElement and DataTransferItem.</p>
+              <p class="draft-status"><b>Draft state:</b>
+                Proposal in <a href="https://www.w3.org/community/wicg/">Web Platform Incubator Community Group</a></p>
+            </dd>
+            <dt id="wicg-haptics" class="spec"><a href="https://github.com/MicrosoftEdge/MSEdgeExplainers/blob/main/HapticsDevice/explainer.md">Haptics</a></dt>
+            <dd>
+              <p>An API allowing web applications to interface with haptic
+                actuators, such as vibration motors found on gamepad
+                controllers, and potentially other devices that provide haptic
+                feedback.</p>
+              <p class="draft-status"><b>Draft state:</b>
+                Proposal in <a href="https://www.w3.org/community/wicg/">Web Platform Incubator Community Group</a></p>
+            </dd>
+            <dt id="wicg-ua-client-hints" class="spec"><a href="https://wicg.github.io/ua-client-hints/">User-Agent Client Hints</a></dt>
+            <dd>
+              <p>This document defines a set of Client Hints that aim to provide
+                developers with the ability to perform agent-based content
+                negotiation when necessary, while avoiding the historical
+                baggage and passive fingerprinting surface exposed by the
+                venerable <code>User-Agent</code> HTTP header.</p>
+              <p class="draft-status"><b>Draft state:</b>
+                Proposal in <a href="https://www.w3.org/community/wicg/">Web Platform Incubator Community Group</a></p>
+            </dd>
+            <dt id="wicg-install-element" class="spec"><a href="https://github.com/WICG/install-element">User-Initiated Web Application Installation</a></dt>
+            <dd>
+              <p>A means to trigger installation of a web application.</p>
+              <p class="draft-status"><b>Draft state:</b>
+                Proposal in <a href="https://www.w3.org/community/wicg/">Web Platform Incubator Community Group</a></p>
+            </dd>
+            <dt id="wicg-web-app-launch" class="spec"><a href="https://wicg.github.io/web-app-launch/">Web App Launch Handler API</a></dt>
+            <dd>
+              <p>API that allows web applications to configure the behaviour of app launches with respect to already open app instances.</p>
+              <p class="draft-status"><b>Draft state:</b>
+                Proposal in <a href="https://www.w3.org/community/wicg/">Web Platform Incubator Community Group</a></p>
+            </dd>
+            <dt id="wicg-web-share-target" class="spec"><a href="https://wicg.github.io/web-share-target/">Web Share Target</a></dt>
+            <dd>
+              <p>An API that allows websites to declare themselves as web share
+                targets, which can receive shared content from either the Web
+                Share API, or system events (e.g., shares from native apps).</p>
+              <p class="draft-status"><b>Draft state:</b>
+                Proposal in <a href="https://www.w3.org/community/wicg/">Web Platform Incubator Community Group</a></p>
+            </dd>
+          </dl>
+        </section>
+
+        <section id="other-deliverables">
+          <h3>
+            Other Deliverables
+          </h3>
+          <p>
+            Other non-normative documents may be created such as:
+          </p>
+          <ul>
+            <li>Use case and requirement documents;</li>
+            <li>Implementation report for the specification;</li>
+            <li>Primer or Best Practice documents to support web developers when designing applications.</li>
+          </ul>
+
+          <h4 id="notes">Notes</h4>
+          <p>List of Notes produced by the Web Applications Working Group.</p>
+          <ul>
+            <li id="7947" class="spec">
+              <a href="https://www.w3.org/TR/manifest-app-info/" rel="versionof">Web App Manifest - Application Information</a>
+              <p>This document is a registry of supplementary members for the Web App Manifest specification that provide additional metadata to an application manifest. This metadata can be used in a digital storefront or other surfaces where this web application may be marketed or distributed, or to enhance an installation dialog when installing a web application.</p>
+
+              <p class="draft-status"><b>Draft state:</b> <a href="https://www.w3.org/TR/manifest-app-info/">Group Note</a></p>
+
+              <p class="milestone"><b>Expected completion:</b> Working Group Note</p>
+
+              <p><b>Adopted Draft:</b> Web App Manifest - Application Information, <a href="https://www.w3.org/TR/2023/NOTE-manifest-app-info-20230821/">https://www.w3.org/TR/2023/NOTE-manifest-app-info-20230821/</a>, 21 August 2023</p>
+            </li>
+          </ul>
+        </section>
+
+        <section id="timeline">
+          <h3>Timeline</h3>
+          <p>
+            All specifications produced by the WebApps Working Group are
+            expected to progress during this charter period. The charter does
+            not include a detailed timeline for each specification because such
+            information is speculative and easily becomes inaccurate. However,
+            a rough estimation of completion is available in the <a href="#normative">Normative Specifications</a>
+            when possible.
+          </p>
+          <p>
+            The Working Group <a href="https://www.w3.org/groups/wg/webapps/">home
+            page</a> will link to a more comprehensive page with detailed
+            status and estimated completion time for each specification.
+          </p>
+          <p>
+            Note that the <a href="#incubation">WICG Specifications</a>, if
+            adopted, have an estimated time of completion of 2 years.
+          </p>
+        </section>
+      </section>
+
+      <section id="success-criteria">
+        <h2>Success Criteria</h2>
+
+        <!-- Testing and interop -->
+        <p>In order to advance beyond
+          <a href="https://www.w3.org/policies/process/#RecsCR" title="Candidate Recommendation">Candidate Recommendation</a>, each normative specification is expected to have
+          <a href="https://www.w3.org/policies/process/#implementation-experience">at least two independent interoperable
+            implementations</a> of every feature defined in the specification, where
+          interoperability can be verified by passing open test suites. In order to advance beyond Candidate Recommendation, each normative specification must have an open test suite of every feature defined in the specification.</p>
+        <p>There should be testing plans for each specification, starting from the earliest drafts.</p>
+        <p>To promote interoperability, all changes made to specifications
+          in Candidate Recommendation
+          or to features that have deployed implementations
+          should have <a href="https://www.w3.org/policies/testing/">tests</a>.
+          Testing efforts should be conducted via the <a href="https://github.com/web-platform-tests/wpt">Web Platform Tests</a> project.</p>
+
+        <!-- Horizontal review -->
+
+        <p>Each specification should contain separate sections detailing all known security and
+          privacy implications for implementers, Web authors, and users.</p>
+
+        <p id="a11y-section">
+          Each specification should contain a section on accessibility that describes the benefits and impacts, including ways specification features can be used to address them, and
+          recommendations for maximising accessibility in implementations.</p>
+
+        <!-- W3C Statements and Web Platform Design Principles -->
+        <p>This group is expected to be guided by the following documents:</p>
+        <ul>
+          <li><a href="https://www.w3.org/TR/ethical-web-principles/">Ethical Web Principles</a>,</li>
+          <li><a href="https://www.w3.org/TR/privacy-principles/">Privacy Principles</a>,</li>
+          <li><a href="https://www.w3.org/TR/design-principles/">Web Platform Design Principles</a>.</li>
+        </ul>
+
+        <!-- Relevance and momentum -->
+        <p>All new features should have expressions of interest from at least two potential implementors before being incorporated in the specification.</p>
+      </section>
+
+      <section id="coordination">
+        <h2>Coordination</h2>
+        <p>For all specifications, this Working Group will seek <a href="https://www.w3.org/guide/documentreview/#how-to-get-horizontal-review">horizontal review</a> for
+        accessibility, internationalization, privacy, and security with the relevant Working and
+        Interest Groups, and with the <a href="https://www.w3.org/groups/other/tag/" title="Technical Architecture Group">TAG</a>.
+        Invitation for review must be issued during each major standards-track document transition, including
+        <a href="https://www.w3.org/policies/process/#RecsWD" title="First Public Working Draft">FPWD</a>.  The
+        Working Group is encouraged to engage collaboratively with the horizontal review groups throughout development of
+        each specification.  The Working Group is advised to seek a review at least 3 months before first entering
+        <a href="https://www.w3.org/policies/process/#RecsCR" title="Candidate Recommendation">CR</a> and is encouraged
+        to proactively notify the horizontal review groups when major changes occur in a specification following a review.</p>
+
+        <p>Additional technical coordination with the following Groups will be made, per the <a href="https://www.w3.org/policies/process/#WGCharter">W3C Process Document</a>:</p>
+
+        <section>
+          <h3 id="w3c-coordination">W3C Groups</h3>
+          <p>
+            The work of the WebApps Working Group touches on the work of many
+            other <a href="https://www.w3.org/groups/">W3C Working and Interest
+            Groups</a>. Where appropriate, the WebApps Working Group will
+            coordinate with the relevant Working or Interest Groups, per the
+            <a href="https://www.w3.org/policies/process/#WGCharter">W3C
+            Process</a>.
+          </p>
+          <dl>
+            <dt><a href="https://www.w3.org/groups/wg/das/">Devices and Sensors Working Group</a></dt>
+            <dd>The Web Applications Working Group will coordinate with the Devices and Sensors Working Group regarding the <a href="#11343">Contact Picker API</a>, the <a href="#11508">Screen Wake Lock API</a>, the <a href="#11583">Device Orientation and Motion</a> and the <a href="#10342">Geolocation</a>.</dd>
+          </dl>
+        </section>
+
+        <section>
+          <h3 id="external-coordination">External Organizations</h3>
+          <p>
+            The WebApps Working Group may also coordinate with the following
+            organizations:
+          </p>
+          <dl>
+            <dt><a href="https://www.ecma-international.org/technical-committees/tc39/">ECMA TC39</a></dt>
+            <dd>For co-ordination on topics relating to JavaScript.</dd>
+            <dt><a href="https://www.ietf.org/">Internet Engineering Task Force (IETF)</a></dt>
+            <dd>For co-ordination on topics relating to internet protocols.</dd>
+            <dt><a href="https://whatwg.org/">Web Hypertext Application Technology Working Group (WHATWG)</a></dt>
+            <dd>For co-ordination on topics relating to the web platform.</dd>
+          </dl>
+        </section>
+      </section>
+
+      <section class="participation">
+        <h2 id="participation">
+          Participation
+        </h2>
+        <p>
+          To be successful, this Working Group is expected to have 6 or more active participants for its duration, including representatives from the key implementors of these specifications, and active Editors and Test Leads for each specification. The Chairs, specification Editors, and Test Leads are expected to contribute half of a working day per week towards the Working Group. There is no minimum requirement for other Participants.
+        </p>
+        <p>
+          The group encourages questions, comments and issues on its public mailing lists and document repositories, as described in <a href="#communication">Communication</a>. The group also welcomes non-participants to make technical contributions for ongoing work, provided they agree to the terms of the <a href="https://www.w3.org/policies/patent-policy/">W3C Patent Policy</a>.
+        </p>
+        <p>
+          The Chairs should periodically look through the non-W3C-Member contributors to the Working Group or the <a href="https://wicg.io/">Web Platform Incubator Community Group</a> and consider whether each one should be invited to participate as an <a href="https://www.w3.org/invited-experts/">Invited Expert</a>. If a non-W3C-Member contributor would like to participate in meetings, they are encouraged to <a href="https://www.w3.org/groups/wg/webapps/instructions/">apply to be an Invited Expert</a>.
+        </p>
+        <p>Participants in the group are required (by the <a href="https://www.w3.org/policies/process/#ParticipationCriteria">W3C Process</a>) to follow the
+          W3C <a href="https://www.w3.org/policies/code-of-conduct/">Code of Conduct</a>.</p>
+      </section>
+
+      <section id="working-mode">
+        <h2>
+          Working mode
+        </h2>
+        <p>
+          The Chairs and Editors will assess support from web platform
+          implementers or web application or framework developers to ensure that
+          substantial changes are supported by more than a single member before
+          adoption.
+        </p>
+        <p>
+          Moreover, at least two web platform implementers must support a
+          substantive change before it can be made to a specification. This is
+          enforced by a pull request template on GitHub, which Editors must fill
+          out as a public record before a substantive contribution can be
+          merged. The template will require implementers to give public support
+          for a change/fix/feature and, where possible, provide a link to a
+          public bug tracker for an implementation.
+        </p>
+      </section>
+
+      <section id="communication">
+        <h2>
+          Communication
+        </h2>
+        <p id="public">
+          Technical discussions for this Working Group are conducted in <a href="https://www.w3.org/policies/process/#confidentiality-levels">public</a>: the meeting minutes from teleconference and face-to-face meetings will be archived for public review, and technical discussions and issue tracking will be conducted in a manner that can be both read and written to by the general public. Working Drafts and Editor's Drafts of specifications will be developed in public repositories and may permit direct public contribution requests.
+        The meetings themselves are not open to public participation, however.
+        </p>
+        <p>
+          Information about the group (including details about deliverables, issues, actions, status, participants, and meetings) will be available from the <a href="https://www.w3.org/groups/wg/webapps/">Web Applications Working Group home page.</a>
+        </p>
+        <p>
+          Most Web Applications Working Group teleconferences will focus on discussion of particular specifications, and will be conducted on an as-needed basis.
+        </p>
+        <p>
+          This group primarily conducts its technical work on <a id="public-github" href="https://github.com/w3c/webappswg/issues">GitHub issues</a>, and a public mailing list <a id="public-name" href="mailto:public-webapps@w3.org">public-webapps@w3.org</a> (<a href="https://lists.w3.org/Archives/Public/public-webapps/">archive</a>) is also available for the public.
+          The public is invited to review, discuss and contribute to this work.
+        </p>
+      </section>
+
+
+
+      <section id="decisions">
+        <h2>
+          Decision Policy
+        </h2>
+        <p>
+          This group will seek to make decisions through consensus and due process, per the <a href="https://www.w3.org/policies/process/#Consensus">W3C Process Document (section 5.2.1, Consensus)</a>. Typically, an editor or other participant makes an initial proposal, which is then refined in discussion with members of the group and other reviewers, and consensus emerges with little formal voting being required.</p>
+        <p>
+           However, if a decision is necessary for timely progress and consensus is not achieved after careful consideration of the range of views presented, the Chairs may call for a group vote and record a decision along with any objections.
+        </p>
+        <p>
+          To afford asynchronous decisions and organizational deliberation, any resolution (including publication decisions) taken in a face-to-face meeting or teleconference will be considered provisional.
+
+          A call for consensus (CfC) will be issued for all resolutions (for example, via email, GitHub issue or web-based survey), with a response period from <span id="cfc">one week to 10 working days</span>, depending on the chair's evaluation of the group consensus on the issue.
+
+          If no objections are raised by the end of the response period, the resolution will be considered to have consensus as a resolution of the Working Group.
+        </p>
+        <p>
+          All decisions made by the group should be considered resolved unless and until new information becomes available or unless reopened at the discretion of the Chairs.
+        </p>
+        <p>
+          This charter is written in accordance with the <a href="https://www.w3.org/policies/process/#Votes">W3C Process Document (Section 5.2.3, Deciding by Vote)</a> and includes no voting procedures beyond what the Process Document requires.
+        </p>
+      </section>
+
+
+
+      <section id="patentpolicy">
+        <h2>
+          Patent Policy
+        </h2>
+        <p>
+          This Working Group operates under the <a href="https://www.w3.org/policies/patent-policy/">W3C Patent Policy</a> (Version of 15 May 2025). To promote the widest adoption of Web standards, W3C seeks to issue Web specifications that can be implemented, according to this policy, on a Royalty-Free basis.
+
+          For more information about disclosure obligations for this group, please see the <a href="https://www.w3.org/groups/wg/webapps/ipr/">licensing information</a>.
+        </p>
+      </section>
+
+
+
+      <section id="licensing">
+        <h2>Licensing</h2>
+        <p>This Working Group will use the <a href="https://www.w3.org/copyright/software-license/">W3C Software and Document license</a> for all its deliverables.</p>
+      </section>
+
+
+
+      <section id="about">
+        <h2>
+          About this Charter
+        </h2>
+        <p>
+          This charter has been created according to <a href="https://www.w3.org/policies/process/#GAGeneral">section 3.4</a> of the <a href="https://www.w3.org/policies/process/">Process Document</a>. In the event of a conflict between this document or the provisions of any charter and the W3C Process, the W3C Process shall take precedence.
+        </p>
+
+        <section id="history">
+          <h3>
+            Charter History
+          </h3>
+
+          <p>The following table lists details of all changes from the initial charter, per the <a href="https://www.w3.org/policies/process/#CharterReview">W3C Process Document (section 4.3, Advisory Committee Review of a Charter)</a>:</p>
+
+          <table class="history">
+            <tbody>
+              <tr>
+                <th>
+                  Charter Period
+                </th>
+                <th>
+                  Start Date
+                </th>
+                <th>
+                  End Date
+                </th>
+                <th>
+                  Changes
+                </th>
+              </tr>
+              <tr>
+                <th>
+                  <a href="https://lists.w3.org/Archives/Member/w3c-ac-members/2019AprJun/0034.html">Initial Charter</a>
+                </th>
+                <td>
+                  14 May 2019
+                </td>
+                <td>
+                  31 May 2021
+                </td>
+                <td>
+                  <i>none</i>
+                </td>
+              </tr>
+              <tr>
+                <th>
+                  <a href="https://lists.w3.org/Archives/Member/w3c-ac-members/2020OctDec/0039.html">Rechartered</a>
+                </th>
+                <td>
+                  15 December 2020
+                </td>
+                <td>
+                  31 May 2021
+                </td>
+                <td>
+                  New Patent Policy
+                </td>
+              </tr>
+              <tr>
+                <th>
+                  <a href="https://lists.w3.org/Archives/Member/w3c-ac-members/2022AprJun/0000.html">Charter Extension</a>
+                </th>
+                <td>
+                  1 June 2021
+                </td>
+                <td>
+                  30 April 2022
+                </td>
+                <td>
+                  none
+                </td>
+              </tr>
+              <tr>
+                <th>
+                  <a href="https://lists.w3.org/Archives/Member/w3c-ac-members/2022AprJun/0015.html">Rechartered</a>
+                </th>
+                <td>
+                 14 April 2022
+                </td>
+                <td>
+                 14 April 2024
+                </td>
+                <td>
+                  <ul>
+                    <li>Stopped Working on the HTML Accessibility API Mappings
+                    (AAM) spec;
+                    </li>
+                    <li>Remove Clipboard API and Events, ContentEditable,
+                    Selection API, and Input Events from the Deliverables.
+                    </li>
+                    <li>Add WebIDL to the charter as a possible Deliverable.
+                    </li>
+                  </ul>
+                </td>
+              </tr>
+              <tr>
+                <th>
+                  <a href="https://lists.w3.org/Archives/Member/w3c-ac-members/2024JanMar/0033.html">Rechartered</a>
+                </th>
+                <td>
+		  21 February 2024
+                </td>
+                <td>
+		  28 February 2026
+                </td>
+                <td>
+                  <ul>
+                    <li>Add the Screen Wake Lock API, the DeviceOrientation Event Specification, the Geolocation API as joint deliverables with the W3C Devices and Sensors Working Group.
+                    </li>
+                    <li>Drop the WebIDL spec.
+                    </li>
+                    <li>The ARIA in HTML spec has been moved to the ARIA Working Group.
+                    </li>
+                  </ul>
+                </td>
+              </tr>
+              <tr>
+                <th>
+                  <a href="https://www.w3.org/2026/01/webappswg-charter-2026.html">Rechartered</a>
+                </th>
+                <td>
+                  16 January 2026
+                </td>
+                <td>
+                  31 January 2028
+                </td>
+                <td>
+                  <ul>
+                    <li>The Intersection Observer specification has been transferred to the CSS Working Group.</li>
+                    <li>Service Workers Nightly has been added to the charter as a Normative Deliverable.</li>
+                    <li>The Background Fetch specification, The File and Directory Entries API specification, the User-Initiated Web Application Installation specification, and the Web App Launch Handler API specification have been added to the list of WICG specifications identified as potential group deliverables. The Cookie Store specification has been removed from the list.</li>
+                  </ul>
+                </td>
+              </tr>
+              <tr>
+                <th>
+                  <a class="todo" href="">Rechartered</a>
+                </th>
+                <td>
+                  <i class="todo">[dd monthname yyyy]</i>
+                </td>
+                <td>
+                  <i class="todo">[dd monthname yyyy]</i>
+                </td>
+                <td>
+                  <p class="todo">[description of change to charter, with link to new deliverable item in charter] <b>Note:</b> use the class <code>new</code> for all new deliverables, for ease of recognition.</p>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </section>
+
+        <section id="changelog">
+          <h3>Change log</h3>
+
+          <!-- Use this section for changes _after_ the charter was approved by the Director. -->
+          <p>Changes to this document are documented in this section.</p>
+          <!--
+          <dl id='changes'>
+            <dt>YYYY-MM-DD</dt>
+            <dd>[changes]]</dd>
+          </dl>
+          -->
+        </section>
+
+        <section id="history-of-wg">
+          <h3>
+            History of this WG
+          </h3>
+          <p>
+            The WebApps Working Group was a predecessor to the <a href="https://www.w3.org/WebPlatform/WG/">Web Platform Working Group</a>
+            (which remains active to work on specifications that are pertinent
+            to the discussions relating to a collaboration agreement between
+            the W3C and the WHATWG). The remaining specifications have been
+            transferred from the Web Platform Working Group to the WebApps
+            Working Group, so that progress can continue to be made on those
+            specifications while the W3C and WHATWG negotiations are ongoing.
+          </p>
+          <p>
+            In addition, specifications that have been successfully incubated
+            in the <a href="https://www.w3.org/community/wicg/">Web Platform
+            Incubator Community Group (WICG)</a> have been transferred to the
+            WebApps Working Group.
+          </p>
+        </section>
+      </section>
+    </main>
+
+    <hr>
+
+    <footer>
+      <address>
+        <a href="mailto:xiaoqian@w3.org">Xiaoqian Wu</a> and <a href="mailto:mike@w3.org">Michael[tm] Smith</a>
+      </address>
+
+<p class="copyright">Copyright © 2026 <a href="https://www.w3.org/">World Wide Web Consortium</a>.<br>
+  <abbr title="World Wide Web Consortium">W3C</abbr><sup>®</sup>
+  <a href="https://www.w3.org/policies/#disclaimers">liability</a>,
+  <a href="https://www.w3.org/policies/#trademarks">trademark</a> and
+      <a rel="license" href="https://www.w3.org/copyright/software-license/" title="W3C Software and Document Notice and License">permissive document license</a> rules apply.</p>
+
+      <hr>
+      <p><a href="https://github.com/w3c/webappswg/tree/main/charter">Yes, it's on GitHub!</a>.</p>
+    </footer>
+
+  </body>
+</html>
